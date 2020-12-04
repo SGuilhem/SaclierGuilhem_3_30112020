@@ -1,3 +1,45 @@
 $fa-font-path: "webfonts";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#bloc_page {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* Header */
+
+header {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+/* Bloc form*/
+
+main section#bloc_form {
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+
+}
+
+@media screen and (min-width:767px) {
+main section#bloc_form form#search--responsive {
+  display: none;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width: 767px) {
+main section#bloc_form div#bloc_explorer form#search--desktop {
+  display: none;
+  }
+}
