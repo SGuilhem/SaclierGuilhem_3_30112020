@@ -1,6 +1,7 @@
 $fa-font-path: "webfonts";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -101,6 +102,29 @@ main section#bloc_form div#bloc_explorer form#search--desktop {
   }
 }
 
+/* Fonctionnement */
+
+main section#fonctionnement {
+  display: flex;
+  padding-top: 50px;
+    #list--steps {
+      display: flex;
+      ol {
+        display: flex;
+        flex-direction: row;
+        li {
+          margin-right: 75px;
+          width: 250px;
+          height: 55px;
+          border-radius: $function-radius;
+          font-size: 1rem;
+          background: $grey;
+          text-align: center;
+        }
+      }
+    }
+}
+
 main section#restaurants img{
-  max-width: 500px;
+  max-width: 300px;
 }
