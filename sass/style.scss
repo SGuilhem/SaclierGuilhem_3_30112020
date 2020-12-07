@@ -4,6 +4,18 @@ $fa-font-path: "webfonts";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* Variables */
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$third-color: #99E2D0;
+$grey: #F2F2F2;
+$btn-radius: 30px;
+$function-radius: 15px;
+$thumbnails-radius: 10px;
+
+/* */
+
 html {
     font-family: 'Roboto', sans-serif;
 
@@ -19,8 +31,11 @@ html {
 /* Header */
 
 header {
-  padding-left: 50px;
-  padding-top: 20px;
+    padding: 30px 50px 30px 40px;
+      #logo img {
+        height: 50px;
+        width: auto;
+      }
 }
 
 /* Bloc form*/
@@ -28,8 +43,50 @@ header {
 main section#bloc_form {
   display: flex;
   flex-direction: row;
-  padding-left: 100px;
-
+  border-radius: 15px;
+  height: 185px;
+  justify-content: center;
+    #bloc_explorer{
+      background-color: $grey;
+      width: 1000px;
+      border: 5px solid $grey;
+      border-radius: 15px;
+      padding-left: 50px;
+      text-align: center;
+        h1 {
+          font-size: 1.8rem;
+        }
+        p {
+          font-size: 1.3rem;
+        }
+        #search--desktop .geolocate{
+          border: 1px solid $grey;
+          font-size: 1.1rem;
+        }
+          input {
+            border: 1px solid $grey;
+            background-color: $grey;
+            color: black;
+            font-weight: bold;
+            font-size: 1.1rem;
+            width: 170px;
+            height: 30px;
+          }
+          input::placeholder {
+            color: black;
+            font-weight: bold;
+            font-size: 1.1rem;
+          }
+          button.explorer{
+            width: 220px;
+            height: 40px;
+            border-radius: $btn-radius;
+            font-size: 1rem;
+            color: white;
+            background: linear-gradient($secondary-color, 75%, $primary-color);
+            border: 0px solid $secondary-color;
+          }
+    }
 }
 
 @media screen and (min-width:767px) {
@@ -42,4 +99,8 @@ main section#bloc_form form#search--responsive {
 main section#bloc_form div#bloc_explorer form#search--desktop {
   display: none;
   }
+}
+
+main section#restaurants img{
+  max-width: 500px;
 }

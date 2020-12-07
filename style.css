@@ -6085,6 +6085,8 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+/* Variables */
+/* */
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -6098,15 +6100,61 @@ html {
 
 /* Header */
 header {
-  padding-left: 50px;
-  padding-top: 20px;
+  padding: 30px 50px 30px 40px;
+}
+header #logo img {
+  height: 50px;
+  width: auto;
 }
 
 /* Bloc form*/
 main section#bloc_form {
   display: flex;
   flex-direction: row;
-  padding-left: 100px;
+  border-radius: 15px;
+  height: 185px;
+  justify-content: center;
+}
+main section#bloc_form #bloc_explorer {
+  background-color: #F2F2F2;
+  width: 1000px;
+  border: 5px solid #F2F2F2;
+  border-radius: 15px;
+  padding-left: 50px;
+  text-align: center;
+}
+main section#bloc_form #bloc_explorer h1 {
+  font-size: 1.8rem;
+}
+main section#bloc_form #bloc_explorer p {
+  font-size: 1.3rem;
+}
+main section#bloc_form #bloc_explorer #search--desktop .geolocate {
+  border: 1px solid #F2F2F2;
+  font-size: 1.1rem;
+}
+main section#bloc_form #bloc_explorer input {
+  border: 1px solid #F2F2F2;
+  background-color: #F2F2F2;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+  width: 170px;
+  height: 30px;
+}
+main section#bloc_form #bloc_explorer input::placeholder {
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+main section#bloc_form #bloc_explorer button.explorer {
+  width: 220px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: white;
+  background: linear-gradient(#FF79DA, 75%, #9356DC);
+  border: 0px solid #FF79DA;
 }
 
 @media screen and (min-width: 767px) {
@@ -6118,6 +6166,9 @@ main section#bloc_form {
   main section#bloc_form div#bloc_explorer form#search--desktop {
     display: none;
   }
+}
+main section#restaurants img {
+  max-width: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */
