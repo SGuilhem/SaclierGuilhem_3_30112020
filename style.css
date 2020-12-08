@@ -6159,7 +6159,7 @@ main section#bloc_form input {
   color: black;
   font-weight: normal;
   font-size: 0.8rem;
-  width: 120px;
+  width: 140px;
   height: 30px;
   align-self: center;
 }
@@ -6342,7 +6342,6 @@ main section#restaurants .pointer i {
   position: relative;
   left: 145px;
   bottom: 55px;
-  z-index: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
