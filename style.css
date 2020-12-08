@@ -6109,105 +6109,111 @@ html {
 }
 
 #bloc_page {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 1400px;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Header */
 header {
-  padding: 30px 50px 30px 40px;
+  padding: 15px 0px 10px;
+}
+header #logo {
+  display: flex;
+  width: auto;
+  justify-content: center;
 }
 header #logo img {
-  height: 50px;
-  width: auto;
+  height: 30px;
 }
 
 /* Bloc form*/
 main section#bloc_form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border-radius: 15px;
-  height: 185px;
   justify-content: center;
 }
-main section#bloc_form #bloc_explorer {
-  background-color: #F2F2F2;
-  width: 1000px;
-  border: 5px solid #F2F2F2;
-  border-radius: 15px;
-  padding-left: 50px;
-  text-align: center;
+main section#bloc_form #search--responsive {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F0F0F0;
+  height: 50px;
+  border: 0px solid #F0F0F0;
+  box-shadow: inset 0px 4px 8px #888;
 }
-main section#bloc_form #bloc_explorer h1 {
-  font-size: 1.8rem;
+main section#bloc_form .geolocate {
+  display: flex;
+  border: 1px solid #F0F0F0;
+  font-size: 0.9rem;
+  background-color: #F0F0F0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-main section#bloc_form #bloc_explorer p {
-  font-size: 1.3rem;
-}
-main section#bloc_form #bloc_explorer #search--desktop .geolocate {
-  border: 1px solid #F2F2F2;
-  font-size: 1.1rem;
-}
-main section#bloc_form #bloc_explorer input {
-  border: 1px solid #F2F2F2;
-  background-color: #F2F2F2;
+main section#bloc_form input {
+  display: flex;
+  border: 1px solid #F0F0F0;
+  background-color: #F0F0F0;
   color: black;
-  font-weight: bold;
-  font-size: 1.1rem;
-  width: 170px;
+  font-weight: normal;
+  font-size: 0.8rem;
+  width: 120px;
   height: 30px;
+  align-self: center;
 }
-main section#bloc_form #bloc_explorer input::placeholder {
+main section#bloc_form input::placeholder {
+  display: flex;
   color: black;
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-weight: normal;
+  font-size: 1rem;
 }
-main section#bloc_form #bloc_explorer button.explorer {
-  width: 220px;
-  height: 40px;
+main section#bloc_form button.explorer {
   border-radius: 30px;
   font-size: 1rem;
+  width: 220px;
+  height: 45px;
   color: white;
   background: linear-gradient(#FF79DA, 75%, #9356DC);
   border: 0px solid #FF79DA;
 }
-
-@media screen and (min-width: 767px) {
-  main section#bloc_form form#search--responsive {
-    display: none;
-  }
+main section#bloc_form #bloc_explorer {
+  width: auto;
+  text-align: center;
+  background-color: #F8F8F8;
+  height: 280px;
 }
+main section#bloc_form #bloc_explorer h1 {
+  display: flex;
+  font-size: 1.4rem;
+  width: 250px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main section#bloc_form #bloc_explorer p {
+  display: flex;
+  font-size: 1.1rem;
+  font-size: 100;
+  width: 350px;
+  background-color: #F8F8F8;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   main section#bloc_form div#bloc_explorer form#search--desktop {
     display: none;
   }
 }
-/* Fonctionnement */
 main section#fonctionnement {
   display: flex;
-  padding-top: 50px;
-}
-main section#fonctionnement #list--steps {
-  display: flex;
-}
-main section#fonctionnement #list--steps ol {
-  display: flex;
-  flex-direction: row;
-}
-main section#fonctionnement #list--steps ol li {
-  margin-right: 75px;
-  width: 250px;
-  height: 55px;
-  border-radius: 15px;
-  font-size: 1rem;
-  background: #F2F2F2;
-  text-align: center;
-}
-
-main section#restaurants img {
-  max-width: 300px;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
