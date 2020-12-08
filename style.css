@@ -6314,9 +6314,11 @@ main section#restaurants div.description {
 main section#restaurants h3 {
   font-size: 1.1rem;
   margin: 15px 0px 5px;
+  width: 200px;
 }
 main section#restaurants p {
   margin: 0px 0px 10px;
+  width: 200px;
 }
 main section#restaurants button {
   position: relative;
