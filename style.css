@@ -6285,6 +6285,7 @@ main section#restaurants #list--restaurants {
   justify-content: space-around;
   align-content: space-between;
   height: auto;
+  padding-bottom: 55px;
 }
 main section#restaurants div.restaurantthumbnails {
   display: flex;
@@ -6344,6 +6345,27 @@ main section#restaurants .pointer i {
   position: relative;
   left: 145px;
   bottom: 55px;
+}
+
+footer {
+  background-color: #383838;
+  padding: 20px 0px 50px 20px;
+}
+footer h4 {
+  font-size: 1rem;
+  margin: 0px;
+  padding-bottom: 10px;
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 0px 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

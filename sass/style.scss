@@ -10,7 +10,7 @@ $fa-font-path: "webfonts";
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
-$grey: #F8F8F8;
+$gray: #F8F8F8;
 $btn-radius: 30px;
 $function-radius: 20px;
 $thumbnails-radius: 10px;
@@ -97,7 +97,7 @@ main section#bloc_form {
     #bloc_explorer{
       width: auto;
       text-align: center;
-      background-color: $grey;
+      background-color: $gray;
       height: 280px;
         h1 {
           display: flex;
@@ -113,7 +113,7 @@ main section#bloc_form {
           font-size: 1.1rem;
           font-size: 100;
           width: 350px;
-          background-color: $grey;
+          background-color: $gray;
           margin-top: 10px;
           margin-bottom: 30px;
           margin-left: auto;
@@ -153,8 +153,8 @@ main section#fonctionnement {
         width: 300px;
         height: 70px;
         color: black;
-        background: $grey;
-        border: 0px solid $grey;
+        background: $gray;
+        border: 0px solid $gray;
         margin: 10px 0px 15px;
         text-align: center;
         align-items: center;
@@ -192,7 +192,7 @@ main section#fonctionnement {
 }
 main section#restaurants {
   margin-top: 60px;
-  background-color: $grey;
+  background-color: $gray;
     h2 {
       padding-top: 50px;
     }
@@ -202,6 +202,7 @@ main section#restaurants {
       justify-content: space-around;
       align-content: space-between;
       height: auto;
+      padding-bottom: 55px;
     }
       div.restaurantthumbnails {
         display: flex;
@@ -263,4 +264,25 @@ main section#restaurants {
           left: 145px;
           bottom: 55px;
           }
+}
+
+footer {
+  background-color: #383838;
+      padding: 20px 0px 50px 20px;
+  h4 {
+    font-size: 1rem;
+    margin: 0px;
+    padding-bottom: 10px;
+    font-family: 'Shrikhand', sans-serif;
+    color: white;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 5px 0px 5px;
+  }
 }
