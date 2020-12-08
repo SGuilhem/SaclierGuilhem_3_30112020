@@ -9,11 +9,12 @@ $fa-font-path: "webfonts";
 
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
-$third-color: #99E2D0;
+$tertiary-color: #99E2D0;
 $grey: #F8F8F8;
 $btn-radius: 30px;
-$function-radius: 15px;
+$function-radius: 20px;
 $thumbnails-radius: 10px;
+$num-radius: 100%;
 
 /* */
 
@@ -90,7 +91,7 @@ main section#bloc_form {
         width: 220px;
         height: 45px;
         color: white;
-        background: linear-gradient($secondary-color, 75%, $primary-color);
+        background: linear-gradient($secondary-color, 55%, $primary-color);
         border: 0px solid $secondary-color;
       }
     #bloc_explorer{
@@ -133,6 +134,57 @@ main section#fonctionnement {
   flex-direction: column;
   margin-top: 30px;
     h2{
-
+      margin-left: 20px;
+      margin-bottom: 20px;
     }
+    div#list--steps nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 40px;
+    }
+      li {
+        display: flex;
+        list-style: none;
+        border-radius: $function-radius;
+        font-size: 1rem;
+        width: 300px;
+        height: 70px;
+        color: black;
+        background: $grey;
+        border: 0px solid $grey;
+        margin: 10px 0px 15px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .1);
+    }
+      li.active {
+        background-color: rgba($primary-color, 0.1);
+      }
+      li.active i {
+        color: $primary-color;
+      }
+      i{
+        font-size: 1.3rem;
+        padding-bottom: 2px;
+        color: gray;
+        margin-right: 25px;
+      }
+      span.step {
+        margin-left: 30px;
+      }
+      span.num {
+        display: flex;
+        position: absolute;
+        left: 40px;
+        font-size: 0.8rem;
+        background-color: $primary-color;
+        color: white;
+        border-radius: $num-radius;
+        width: 25px;
+        height: 25px;
+        align-items: center;
+        justify-content: center;
+      }
 }

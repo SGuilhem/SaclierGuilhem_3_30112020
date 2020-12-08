@@ -6175,7 +6175,7 @@ main section#bloc_form button.explorer {
   width: 220px;
   height: 45px;
   color: white;
-  background: linear-gradient(#FF79DA, 75%, #9356DC);
+  background: linear-gradient(#FF79DA, 55%, #9356DC);
   border: 0px solid #FF79DA;
 }
 main section#bloc_form #bloc_explorer {
@@ -6214,6 +6214,60 @@ main section#fonctionnement {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+}
+main section#fonctionnement h2 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+main section#fonctionnement div#list--steps nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 40px;
+}
+main section#fonctionnement li {
+  display: flex;
+  list-style: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 300px;
+  height: 70px;
+  color: black;
+  background: #F8F8F8;
+  border: 0px solid #F8F8F8;
+  margin: 10px 0px 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+main section#fonctionnement li.active {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+main section#fonctionnement li.active i {
+  color: #9356DC;
+}
+main section#fonctionnement i {
+  font-size: 1.3rem;
+  padding-bottom: 2px;
+  color: gray;
+  margin-right: 25px;
+}
+main section#fonctionnement span.step {
+  margin-left: 30px;
+}
+main section#fonctionnement span.num {
+  display: flex;
+  position: absolute;
+  left: 40px;
+  font-size: 0.8rem;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
