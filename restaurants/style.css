@@ -6128,6 +6128,30 @@ header #logo img {
   height: 30px;
 }
 
+/* Main */
+main div#backgroundimg img {
+  max-height: 240px;
+  width: 100%;
+  object-position: 50% 50%;
+  object-fit: cover;
+  padding: 1px 1px 0px 1px;
+}
+
+div#btn--commander {
+  display: flex;
+  justify-content: center;
+}
+div#btn--commander button.commander {
+  border-radius: 30px;
+  font-size: 1rem;
+  width: 220px;
+  height: 45px;
+  color: white;
+  background: linear-gradient(#FF79DA, 55%, #9356DC);
+  border: 0px solid #FF79DA;
+  text-align: center;
+}
+
 /* Footer */
 footer {
   background-color: #383838;
