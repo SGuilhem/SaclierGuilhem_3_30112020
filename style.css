@@ -6287,6 +6287,13 @@ main section#restaurants #list--restaurants {
   height: auto;
   padding-bottom: 55px;
 }
+main section#restaurants a {
+  text-decoration: none;
+  color: black;
+}
+main section#restaurants a:hover {
+  color: #9356DC;
+}
 main section#restaurants div.restaurantthumbnails {
   display: flex;
   flex-direction: column;
@@ -6343,8 +6350,8 @@ main section#restaurants div.pointed i {
 main section#restaurants .pointer i {
   font-size: 2rem;
   position: relative;
-  left: 145px;
-  bottom: 55px;
+  left: 150px;
+  bottom: 50px;
 }
 
 footer {
