@@ -33,18 +33,28 @@ html {
 /* Header */
 
 header {
+    display: flex;
+    flex-direction: row;
     padding: 15px 0px 10px;
+      button {
+        border: none;
+        background: none;
+        font-size: 1.3rem;
+        padding-left: 20px;
+      }
       #logo {
         display: flex;
         width: auto;
         justify-content: center;
+        padding-right: 40px;
+        margin: auto;
           img {
             height: 30px;
           }
       }
 }
 
-/* Main blabla */
+/* Main */
 
 main div#backgroundimg img {
   max-height: 240px;
@@ -52,6 +62,42 @@ main div#backgroundimg img {
   object-position: 50% 50%;
   object-fit: cover;
   padding: 1px 1px 0px 1px;
+}
+/* test */
+
+main section#menu #restautitle{
+  display:flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+    h1 {
+      font-family: 'Shrikhand', sans-serif;
+    }
+    button.favorite {
+  border: none;
+  background: none;
+      i {
+        font-size: 1.5rem;
+
+      }
+    }
+}
+
+main section#menu article.bloccourse {
+  display: flex;
+  list-style: none;
+  border-radius: $function-radius;
+  font-size: 1rem;
+  width: 300px;
+  height: 70px;
+  color: black;
+  background: $gray;
+  border: 0px solid $gray;
+  margin: 10px 0px 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .1);
 }
 
 div#btn--commander {
@@ -90,5 +136,12 @@ footer {
       text-decoration: none;
       color: white;
       padding: 5px 0px 5px;
+      &:hover {
+      color: $primary-color;
+      }
+    }
+    i {
+      padding-right: 5px;
+      width: 20px;
+    }
   }
-}

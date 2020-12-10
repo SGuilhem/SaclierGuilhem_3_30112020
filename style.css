@@ -6128,7 +6128,7 @@ header #logo img {
   height: 30px;
 }
 
-/* Bloc form*/
+/* Bloc form  -  Penser à clear le form quand actif */
 main section#bloc_form {
   display: flex;
   flex-direction: column;
@@ -6373,6 +6373,13 @@ footer a {
   text-decoration: none;
   color: white;
   padding: 5px 0px 5px;
+}
+footer a:hover {
+  color: #9356DC;
+}
+footer i {
+  padding-right: 5px;
+  width: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

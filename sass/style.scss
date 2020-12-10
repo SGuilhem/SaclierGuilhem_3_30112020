@@ -44,7 +44,7 @@ header {
       }
 }
 
-/* Bloc form*/
+/* Bloc form  -  Penser à clear le form quand actif */
 
 main section#bloc_form {
   display: flex;
@@ -291,5 +291,12 @@ footer {
       text-decoration: none;
       color: white;
       padding: 5px 0px 5px;
+      &:hover {
+      color: $primary-color;
+      }
+    }
+    i {
+      padding-right: 5px;
+      width: 20px;
+    }
   }
-}
