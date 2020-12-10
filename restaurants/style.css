@@ -6112,7 +6112,6 @@ html {
   width: 100%;
   height: 100%;
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 /* Header */
@@ -6126,6 +6125,10 @@ header button {
   background: none;
   font-size: 1.3rem;
   padding-left: 20px;
+  color: black;
+}
+header a {
+  color: black;
 }
 header #logo {
   display: flex;
@@ -6139,15 +6142,31 @@ header #logo img {
 }
 
 /* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 main div#backgroundimg img {
+  position: absolute;
   max-height: 240px;
   width: 100%;
   object-position: 50% 50%;
   object-fit: cover;
   padding: 1px 1px 0px 1px;
+  z-index: 1;
 }
-
-/* test */
+main section#menu {
+  position: absolute;
+  top: 210px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F8F8;
+  border-radius: 30px;
+  padding-top: 30px;
+  z-index: 2;
+}
 main section#menu #restautitle {
   display: flex;
   justify-content: space-between;
@@ -6164,8 +6183,15 @@ main section#menu #restautitle button.favorite {
 main section#menu #restautitle button.favorite i {
   font-size: 1.5rem;
 }
-
-main section#menu article.bloccourse {
+main section#menu article h2 {
+  display: inline-block;
+  padding-right: 50px;
+  font-size: 1rem;
+  font-weight: lighter;
+  border-bottom: 3px solid #99E2D0;
+  padding: 0 0 4px;
+}
+main section#menu article .bloccourse {
   display: flex;
   list-style: none;
   border-radius: 20px;
