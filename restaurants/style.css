@@ -6146,15 +6146,18 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
+  width: auto;
+}
+main div#backgroundimg {
+  z-index: 1;
+  position: absolute;
 }
 main div#backgroundimg img {
-  position: absolute;
-  max-height: 240px;
-  width: 100%;
+  max-height: 100%;
+  width: 99%;
   object-position: 50% 50%;
   object-fit: cover;
   padding: 1px 1px 0px 1px;
-  z-index: 1;
 }
 main section#menu {
   position: absolute;

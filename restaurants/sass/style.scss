@@ -63,14 +63,17 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
-  div#backgroundimg img {
-    position: absolute;
-    max-height: 240px;
-    width: 100%;
-    object-position: 50% 50%;
-    object-fit: cover;
-    padding: 1px 1px 0px 1px;
+  width: auto;
+  div#backgroundimg {
     z-index: 1;
+    position: absolute;
+    img {
+      max-height: 100%;
+      width: 99%;
+      object-position: 50% 50%;
+      object-fit: cover;
+      padding: 1px 1px 0px 1px;
+    }
   }
   section#menu {
     position: absolute;
@@ -145,7 +148,7 @@ div#btn--commander {
 
 footer {
   background-color: #383838;
-      padding: 20px 0px 50px 20px;
+  padding: 20px 0px 50px 20px;
   h4 {
     font-size: 1rem;
     margin: 0px;
