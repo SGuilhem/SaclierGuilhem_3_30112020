@@ -65,8 +65,10 @@ main {
   width: auto;
   div#backgroundimg {
     img {
+      bottom:200px;
       width: 99%;
       padding: 1px 1px 0px 1px;
+
     }
   }
   section#menu {
@@ -74,8 +76,9 @@ main {
     display: flex;
     flex-direction: column;
     background-color: $gray;
-    border-radius: $btn-radius;
-    padding-bottom: 80px;
+    border-top-left-radius: $btn-radius;
+    border-top-right-radius: $btn-radius;
+    padding-left: 20px;
     #restautitle {
       display:flex;
       justify-content: space-between;
@@ -94,24 +97,33 @@ main {
     }
   article h2{
     display: inline-block;
-    padding-right: 50px;
     font-size: 1rem;
     font-weight: lighter;
-    border-bottom: 3px solid $tertiary-color;
-    padding: 0 0 4px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+  h2:before{
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 1px;
+      bottom: 0;
+      left: 0%;
+      border-bottom: 3px solid $tertiary-color;
+    }
   }
   article .bloccourse {
     display: flex;
     flex-direction: column;
     border-radius: $function-radius;
     font-size: 1rem;
-    width: 90%;
+    width: 85%;
     height: auto;
     color: black;
     background: $gray;
     border: 0px solid $gray;
     margin: 10px 0px 15px;
-    padding-left: 20px;
+    padding-left: 10px;
     text-align: center;
     align-items: flex-start;
     justify-content: center;
@@ -137,12 +149,13 @@ main {
         }
     }
   }
-}
 
 div#btn--commander {
   display: flex;
   justify-content: center;
   padding-top: 35px;
+  background-color: $gray;
+  padding-bottom: 80px;
     button.commander{
       border-radius: $btn-radius;
       font-size: 1rem;
@@ -160,7 +173,7 @@ div#btn--commander {
 
 footer {
   background-color: #383838;
-  padding: 20px 0px 50px 20px;
+  padding: 20px 0px 35px 20px;
   h4 {
     font-size: 1rem;
     margin: 0px;
