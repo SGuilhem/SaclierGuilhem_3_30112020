@@ -6163,11 +6163,15 @@ main section#bloc_form input {
   height: 30px;
   align-self: center;
 }
-main section#bloc_form input::placeholder {
+main section#bloc_form ::placeholder {
   display: flex;
   color: black;
   font-weight: normal;
   font-size: 1rem;
+}
+main section#bloc_form :focus {
+  outline: none;
+  border: 3px solid #9356DC;
 }
 main section#bloc_form button.explorer {
   border-radius: 30px;

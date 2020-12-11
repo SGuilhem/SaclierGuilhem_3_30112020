@@ -68,7 +68,7 @@ main section#bloc_form {
       margin-top: auto;
       margin-bottom: auto;
     }
-      input {
+       & input {
         display: flex;
         border: 1px solid #F0F0F0;
         background-color: #F0F0F0;
@@ -79,11 +79,15 @@ main section#bloc_form {
         height: 30px;
         align-self: center;
       }
-      input::placeholder {
+      & ::placeholder {
         display: flex;
         color: black;
         font-weight: normal;
         font-size: 1rem;
+      }
+      & :focus {
+        outline: none;
+        border: 3px solid $primary-color;
       }
       button.explorer{
         border-radius: $btn-radius;
