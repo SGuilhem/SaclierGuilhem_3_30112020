@@ -6104,6 +6104,12 @@ readers do not read off random characters that represent icons */
 
 /* Variables */
 /* */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -6142,7 +6148,7 @@ main section#bloc_form #search--responsive {
   background-color: #F0F0F0;
   height: 50px;
   border: 0px solid #F0F0F0;
-  box-shadow: inset 0px 4px 8px #888;
+  box-shadow: inset 0px 4px 6px #888;
 }
 main section#bloc_form .geolocate {
   display: flex;
@@ -6179,7 +6185,7 @@ main section#bloc_form button.explorer {
   width: 220px;
   height: 45px;
   color: white;
-  background: linear-gradient(#FF79DA, 55%, #9356DC);
+  background: linear-gradient(160deg, #FF79DA 10%, #9356DC);
   border: 0px solid #FF79DA;
 }
 main section#bloc_form #bloc_explorer {
@@ -6265,7 +6271,7 @@ main section#fonctionnement span.step {
 main section#fonctionnement span.num {
   display: flex;
   position: absolute;
-  left: 40px;
+  left: 30px;
   font-size: 0.8rem;
   background-color: #9356DC;
   color: white;
@@ -6361,6 +6367,181 @@ main section#restaurants .pointer i {
 footer {
   background-color: #383838;
   padding: 20px 0px 50px 20px;
+}
+footer h4 {
+  font-size: 1rem;
+  margin: 0px;
+  padding-bottom: 10px;
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 0px 5px;
+}
+footer a:hover {
+  color: #9356DC;
+}
+footer i {
+  padding-right: 5px;
+  width: 20px;
+}
+
+/* Restaurants */
+/* Variables */
+/* test test test camion camion  */
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+#bloc_page {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0px 10px;
+}
+header button {
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  padding-left: 20px;
+  color: black;
+}
+header a {
+  color: black;
+}
+header #logo {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  padding-right: 40px;
+  margin: auto;
+}
+header #logo img {
+  height: 30px;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  background-color: #F8F8F8;
+}
+main div#backgroundimg img {
+  bottom: 200px;
+  width: 99%;
+  padding: 1px 1px 0px 1px;
+}
+main section#menu {
+  position: relative;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F8F8;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main section#menu #restautitle {
+  display: flex;
+  justify-content: space-between;
+}
+main section#menu #restautitle h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+main section#menu #restautitle button.favorite {
+  border: none;
+  background: none;
+}
+main section#menu #restautitle button.favorite i {
+  font-size: 1.5rem;
+}
+main section#menu article h2 {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: lighter;
+  padding-bottom: 5px;
+  position: relative;
+}
+main section#menu h2:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  bottom: 0;
+  left: 0%;
+  border-bottom: 3px solid #99E2D0;
+}
+main article .bloccourse {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 1rem;
+  height: auto;
+  color: black;
+  background: #F8F8F8;
+  border: 0px solid #F8F8F8;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+main article .bloccourse h3 {
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 10px 0 5px;
+}
+main article .bloccourse #descriptionprice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  padding: 5px 0 10px;
+}
+main article .bloccourse #descriptionprice p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+main article .bloccourse #descriptionprice .price p {
+  font-weight: 800;
+}
+
+div#btn-order {
+  display: flex;
+  justify-content: center;
+  background-color: #F8F8F8;
+  padding-bottom: 80px;
+}
+div#btn-order button.commander {
+  border-radius: 30px;
+  font-size: 1rem;
+  width: 220px;
+  height: 45px;
+  color: white;
+  background: linear-gradient(#FF79DA, 55%, #9356DC);
+  border: 0px solid #FF79DA;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #383838;
+  padding: 20px 0px 35px 20px;
 }
 footer h4 {
   font-size: 1rem;
