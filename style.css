@@ -6393,8 +6393,6 @@ footer i {
 }
 
 /* Restaurants */
-/* Variables */
-/* test test test camion camion  */
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -6475,6 +6473,15 @@ main section#menu article h2 {
   font-weight: lighter;
   padding-bottom: 5px;
   position: relative;
+  animation: opacity 2s;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 main section#menu h2:before {
   content: "";
@@ -6485,7 +6492,7 @@ main section#menu h2:before {
   left: 0%;
   border-bottom: 3px solid #99E2D0;
 }
-main article .bloccourse {
+main article .bloccourse #course1 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -6500,6 +6507,224 @@ main article .bloccourse {
   align-items: flex-start;
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  animation: opacity 250ms 150ms both;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main article .bloccourse #course2 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 1rem;
+  height: auto;
+  color: black;
+  background: #F8F8F8;
+  border: 0px solid #F8F8F8;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  animation: opacity 250ms 300ms both;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main article .bloccourse #course3 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 1rem;
+  height: auto;
+  color: black;
+  background: #F8F8F8;
+  border: 0px solid #F8F8F8;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  animation: opacity 250ms 450ms both;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main article .bloccourse #course4 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 1rem;
+  height: auto;
+  color: black;
+  background: #F8F8F8;
+  border: 0px solid #F8F8F8;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  animation: opacity 250ms 600ms both;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main article .bloccourse #course5 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 1rem;
+  height: auto;
+  color: black;
+  background: #F8F8F8;
+  border: 0px solid #F8F8F8;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  animation: opacity 250ms 750ms both;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main article .bloccourse #course6 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 1rem;
+  height: auto;
+  color: black;
+  background: #F8F8F8;
+  border: 0px solid #F8F8F8;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  animation: opacity 250ms 900ms both;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main article .bloccourse #course7 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 1rem;
+  height: auto;
+  color: black;
+  background: #F8F8F8;
+  border: 0px solid #F8F8F8;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  animation: opacity 250ms 1050ms both;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main article .bloccourse #course8 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 1rem;
+  height: auto;
+  color: black;
+  background: #F8F8F8;
+  border: 0px solid #F8F8F8;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  animation: opacity 250ms 1200ms both;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main article .bloccourse #course9 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 1rem;
+  height: auto;
+  color: black;
+  background: #F8F8F8;
+  border: 0px solid #F8F8F8;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  animation: opacity 250ms 1350ms both;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 main article .bloccourse h3 {
   font-size: 0.9rem;

@@ -16,6 +16,24 @@ $function-radius: 20px;
 $thumbnails-radius: 10px;
 $num-radius: 100%;
 
+@mixin course {
+  display: flex;
+  flex-direction: column;
+  border-radius: $function-radius;
+  font-size: 1rem;
+  height: auto;
+  color: black;
+  background: $gray;
+  border: 0px solid $gray;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .1);
+  opacity: 1;
+}
+
 /* */
 
 * {
@@ -314,18 +332,6 @@ footer {
 
 /* Restaurants */
 
-/* Variables */
-
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-$gray: #F8F8F8;
-$btn-radius: 30px;
-$function-radius: 20px;
-$thumbnails-radius: 10px;
-$num-radius: 100%;
-
-/* test test test camion camion  */
 
 html {
     font-family: 'Roboto', sans-serif;
@@ -411,6 +417,11 @@ main {
     font-weight: lighter;
     padding-bottom: 5px;
     position: relative;
+    animation: opacity 2s;
+    }
+    @keyframes opacity {
+      from { opacity: 0; }
+      to   { opacity: 1; }
   }
   h2:before{
       content: "";
@@ -423,20 +434,78 @@ main {
     }
   }
   article .bloccourse {
-    display: flex;
-    flex-direction: column;
-    border-radius: $function-radius;
-    font-size: 1rem;
-    height: auto;
-    color: black;
-    background: $gray;
-    border: 0px solid $gray;
-    margin: 10px 0px 15px;
-    padding-left: 10px;
-    text-align: center;
-    align-items: flex-start;
-    justify-content: center;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .1);
+    #course1 {
+      @include course;
+      animation: opacity 250ms 150ms both;
+      }
+      @keyframes opacity {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+    #course2 {
+      @include course;
+      animation: opacity 250ms 300ms both;
+      }
+      @keyframes opacity {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+    #course3 {
+      @include course;
+      animation: opacity 250ms 450ms both;
+      }
+      @keyframes opacity {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+    #course4 {
+      @include course;
+      animation: opacity 250ms 600ms both;
+      }
+      @keyframes opacity {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+    #course5 {
+      @include course;
+      animation: opacity 250ms 750ms both;
+      }
+      @keyframes opacity {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+    #course6 {
+      @include course;
+      animation: opacity 250ms 900ms both;
+      }
+      @keyframes opacity {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+    #course7 {
+      @include course;
+      animation: opacity 250ms 1050ms both;
+      }
+      @keyframes opacity {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+    #course8 {
+      @include course;
+      animation: opacity 250ms 1200ms both;
+      }
+      @keyframes opacity {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+    #course9 {
+      @include course;
+      animation: opacity 250ms 1350ms both;
+      }
+      @keyframes opacity {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
       h3 {
         font-size: 0.9rem;
         margin: 0;
@@ -457,7 +526,7 @@ main {
           }
         }
     }
-  }
+}
 
 div#btn-order {
   display: flex;
@@ -475,6 +544,7 @@ div#btn-order {
       text-align: center;
     }
 }
+
 
 /* Footer */
 
