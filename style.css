@@ -6191,7 +6191,7 @@ main section#bloc_form button.explorer {
 main section#bloc_form #bloc_explorer {
   width: auto;
   text-align: center;
-  background-color: #F8F8F8;
+  background-color: white;
   height: 280px;
 }
 main section#bloc_form #bloc_explorer h1 {
@@ -6208,7 +6208,7 @@ main section#bloc_form #bloc_explorer p {
   font-size: 1.1rem;
   font-size: 100;
   width: 350px;
-  background-color: #F8F8F8;
+  background-color: white;
   margin-top: 10px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -6229,7 +6229,6 @@ main section#fonctionnement {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  margin-bottom: 60px;
 }
 main section#fonctionnement div#list--steps nav {
   display: flex;
@@ -6245,13 +6244,13 @@ main section#fonctionnement li {
   width: 300px;
   height: 70px;
   color: black;
-  background: #F8F8F8;
-  border: 0px solid #F8F8F8;
+  background: #F2F2F2;
+  border: 0px solid #F2F2F2;
   margin: 10px 0px 15px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
 main section#fonctionnement li.active {
   background-color: rgba(147, 86, 220, 0.1);
@@ -6284,7 +6283,7 @@ main section#fonctionnement span.num {
 
 main section#restaurants {
   margin-top: 60px;
-  background-color: #F8F8F8;
+  background-color: #F2F2F2;
 }
 main section#restaurants h2 {
   padding-top: 50px;
@@ -6435,7 +6434,7 @@ main {
   display: flex;
   flex-direction: column;
   width: auto;
-  background-color: #F8F8F8;
+  background-color: white;
 }
 main div#backgroundimg img {
   bottom: 200px;
@@ -6447,7 +6446,7 @@ main section#menu {
   bottom: 100px;
   display: flex;
   flex-direction: column;
-  background-color: #F8F8F8;
+  background-color: #F2F2F2;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding-left: 20px;
@@ -6499,8 +6498,8 @@ main article .bloccourse #course1 {
   font-size: 1rem;
   height: auto;
   color: black;
-  background: #F8F8F8;
-  border: 0px solid #F8F8F8;
+  background: #F2F2F2;
+  border: 0px solid #F2F2F2;
   margin: 10px 0px 15px;
   padding-left: 10px;
   text-align: center;
@@ -6525,8 +6524,8 @@ main article .bloccourse #course2 {
   font-size: 1rem;
   height: auto;
   color: black;
-  background: #F8F8F8;
-  border: 0px solid #F8F8F8;
+  background: #F2F2F2;
+  border: 0px solid #F2F2F2;
   margin: 10px 0px 15px;
   padding-left: 10px;
   text-align: center;
@@ -6551,8 +6550,8 @@ main article .bloccourse #course3 {
   font-size: 1rem;
   height: auto;
   color: black;
-  background: #F8F8F8;
-  border: 0px solid #F8F8F8;
+  background: #F2F2F2;
+  border: 0px solid #F2F2F2;
   margin: 10px 0px 15px;
   padding-left: 10px;
   text-align: center;
@@ -6577,8 +6576,8 @@ main article .bloccourse #course4 {
   font-size: 1rem;
   height: auto;
   color: black;
-  background: #F8F8F8;
-  border: 0px solid #F8F8F8;
+  background: #F2F2F2;
+  border: 0px solid #F2F2F2;
   margin: 10px 0px 15px;
   padding-left: 10px;
   text-align: center;
@@ -6603,8 +6602,8 @@ main article .bloccourse #course5 {
   font-size: 1rem;
   height: auto;
   color: black;
-  background: #F8F8F8;
-  border: 0px solid #F8F8F8;
+  background: #F2F2F2;
+  border: 0px solid #F2F2F2;
   margin: 10px 0px 15px;
   padding-left: 10px;
   text-align: center;
@@ -6629,8 +6628,8 @@ main article .bloccourse #course6 {
   font-size: 1rem;
   height: auto;
   color: black;
-  background: #F8F8F8;
-  border: 0px solid #F8F8F8;
+  background: #F2F2F2;
+  border: 0px solid #F2F2F2;
   margin: 10px 0px 15px;
   padding-left: 10px;
   text-align: center;
@@ -6655,8 +6654,8 @@ main article .bloccourse #course7 {
   font-size: 1rem;
   height: auto;
   color: black;
-  background: #F8F8F8;
-  border: 0px solid #F8F8F8;
+  background: #F2F2F2;
+  border: 0px solid #F2F2F2;
   margin: 10px 0px 15px;
   padding-left: 10px;
   text-align: center;
@@ -6681,8 +6680,8 @@ main article .bloccourse #course8 {
   font-size: 1rem;
   height: auto;
   color: black;
-  background: #F8F8F8;
-  border: 0px solid #F8F8F8;
+  background: #F2F2F2;
+  border: 0px solid #F2F2F2;
   margin: 10px 0px 15px;
   padding-left: 10px;
   text-align: center;
@@ -6707,8 +6706,8 @@ main article .bloccourse #course9 {
   font-size: 1rem;
   height: auto;
   color: black;
-  background: #F8F8F8;
-  border: 0px solid #F8F8F8;
+  background: #F2F2F2;
+  border: 0px solid #F2F2F2;
   margin: 10px 0px 15px;
   padding-left: 10px;
   text-align: center;
@@ -6749,7 +6748,7 @@ main article .bloccourse #descriptionprice .price p {
 div#btn-order {
   display: flex;
   justify-content: center;
-  background-color: #F8F8F8;
+  background-color: #F2F2F2;
   padding-bottom: 80px;
 }
 div#btn-order button.commander {
