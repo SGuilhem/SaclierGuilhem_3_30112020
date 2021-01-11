@@ -6441,6 +6441,9 @@ main div#backgroundimg img {
   width: 99%;
   padding: 1px 1px 0px 1px;
 }
+main div#menufooter {
+  background-color: #F2F2F2;
+}
 main section#menu {
   position: relative;
   bottom: 100px;
@@ -6507,7 +6510,7 @@ main article .bloccourse #course1 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 150ms both;
+  animation: opacity 1000ms 200ms both;
 }
 @keyframes opacity {
   from {
@@ -6533,7 +6536,7 @@ main article .bloccourse #course2 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 300ms both;
+  animation: opacity 1000ms 400ms both;
 }
 @keyframes opacity {
   from {
@@ -6559,7 +6562,7 @@ main article .bloccourse #course3 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 450ms both;
+  animation: opacity 1000ms 600ms both;
 }
 @keyframes opacity {
   from {
@@ -6585,7 +6588,7 @@ main article .bloccourse #course4 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 600ms both;
+  animation: opacity 1000ms 800ms both;
 }
 @keyframes opacity {
   from {
@@ -6611,7 +6614,7 @@ main article .bloccourse #course5 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 750ms both;
+  animation: opacity 250ms 1000ms both;
 }
 @keyframes opacity {
   from {
@@ -6637,7 +6640,7 @@ main article .bloccourse #course6 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 900ms both;
+  animation: opacity 250ms 1200ms both;
 }
 @keyframes opacity {
   from {
@@ -6663,7 +6666,7 @@ main article .bloccourse #course7 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 1050ms both;
+  animation: opacity 250ms 1400ms both;
 }
 @keyframes opacity {
   from {
@@ -6715,7 +6718,33 @@ main article .bloccourse #course9 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 1350ms both;
+  animation: opacity 250ms 1400ms both;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main article .bloccourse #course10 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 1rem;
+  height: auto;
+  color: black;
+  background: #F2F2F2;
+  border: 0px solid #F2F2F2;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  animation: opacity 250ms 1600ms both;
 }
 @keyframes opacity {
   from {
@@ -6745,13 +6774,13 @@ main article .bloccourse #descriptionprice .price p {
   font-weight: 800;
 }
 
-div#btn-order {
+div#btn--order {
   display: flex;
   justify-content: center;
   background-color: #F2F2F2;
   padding-bottom: 80px;
 }
-div#btn-order button.commander {
+div#btn--order button.commander {
   border-radius: 30px;
   font-size: 1rem;
   width: 220px;

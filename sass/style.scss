@@ -386,6 +386,9 @@ main {
 
     }
   }
+  div#menufooter {
+    background-color: $gray;
+  }
   section#menu {
     position: relative;
     bottom: 100px;
@@ -435,7 +438,7 @@ main {
   article .bloccourse {
     #course1 {
       @include course;
-      animation: opacity 250ms 150ms both;
+      animation: opacity 1000ms 200ms both;
       }
       @keyframes opacity {
         from { opacity: 0; }
@@ -443,7 +446,7 @@ main {
       }
     #course2 {
       @include course;
-      animation: opacity 250ms 300ms both;
+      animation: opacity 1000ms 400ms both;
       }
       @keyframes opacity {
         from { opacity: 0; }
@@ -451,7 +454,7 @@ main {
       }
     #course3 {
       @include course;
-      animation: opacity 250ms 450ms both;
+      animation: opacity 1000ms 600ms both;
       }
       @keyframes opacity {
         from { opacity: 0; }
@@ -459,7 +462,7 @@ main {
       }
     #course4 {
       @include course;
-      animation: opacity 250ms 600ms both;
+      animation: opacity 1000ms 800ms both;
       }
       @keyframes opacity {
         from { opacity: 0; }
@@ -467,7 +470,7 @@ main {
       }
     #course5 {
       @include course;
-      animation: opacity 250ms 750ms both;
+      animation: opacity 250ms 1000ms both;
       }
       @keyframes opacity {
         from { opacity: 0; }
@@ -475,7 +478,7 @@ main {
       }
     #course6 {
       @include course;
-      animation: opacity 250ms 900ms both;
+      animation: opacity 250ms 1200ms both;
       }
       @keyframes opacity {
         from { opacity: 0; }
@@ -483,7 +486,7 @@ main {
       }
     #course7 {
       @include course;
-      animation: opacity 250ms 1050ms both;
+      animation: opacity 250ms 1400ms both;
       }
       @keyframes opacity {
         from { opacity: 0; }
@@ -499,12 +502,20 @@ main {
       }
     #course9 {
       @include course;
-      animation: opacity 250ms 1350ms both;
+      animation: opacity 250ms 1400ms both;
       }
       @keyframes opacity {
         from { opacity: 0; }
         to   { opacity: 1; }
       }
+      #course10 {
+        @include course;
+        animation: opacity 250ms 1600ms both;
+        }
+        @keyframes opacity {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+        }
       h3 {
         font-size: 0.9rem;
         margin: 0;
@@ -527,7 +538,7 @@ main {
     }
 }
 
-div#btn-order {
+div#btn--order {
   display: flex;
   justify-content: center;
   background-color: $gray;
