@@ -6220,11 +6220,6 @@ main section#bloc_form #bloc_explorer p {
     display: none;
   }
 }
-h2 {
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
 main section#fonctionnement {
   display: flex;
   flex-direction: column;
@@ -6458,21 +6453,34 @@ main section#menu {
 main section#menu #restautitle {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 }
 main section#menu #restautitle h1 {
   font-family: "Shrikhand", sans-serif;
 }
-main section#menu #restautitle button.favorite {
-  border: none;
-  background: none;
+main section#menu #restautitle .likebutton {
+  padding: 6px 15px 0px;
 }
-main section#menu #restautitle button.favorite i {
-  font-size: 1.5rem;
+main section#menu #restautitle .like::after {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-size: 1.5em;
+}
+main section#menu #restautitle #favorite:checked ~ .like::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  color: red;
+}
+main section#menu #restautitle .visually-hidden {
+  position: absolute;
+  opacity: 0;
 }
 main section#menu article h2 {
   display: inline-block;
   font-size: 1rem;
   font-weight: lighter;
+  padding-top: 20px;
   padding-bottom: 5px;
   position: relative;
   animation: opacity 2s;

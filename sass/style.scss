@@ -157,11 +157,6 @@ main section#bloc_form div#bloc_explorer form#search--desktop {
   }
 }
 
-h2{
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
 main section#fonctionnement {
   display: flex;
   flex-direction: column;
@@ -402,21 +397,35 @@ main {
     #restautitle {
       display:flex;
       justify-content: space-between;
+      padding-top: 20px;
         h1 {
           font-family: 'Shrikhand', sans-serif;
         }
-        button.favorite {
-          border: none;
-          background: none;
-          i {
-            font-size: 1.5rem;
-        }
+      .likebutton{
+        padding: 6px 15px 0px;
+      }
+      .like::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f004";
+        font-size: 1.5em;
+      }
+      #favorite:checked ~ .like::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f004";
+        color: red;
+      }
+      .visually-hidden {
+        position: absolute;
+        opacity: 0;
       }
     }
+
   article h2{
     display: inline-block;
     font-size: 1rem;
     font-weight: lighter;
+    padding-top: 20px;
     padding-bottom: 5px;
     position: relative;
     animation: opacity 2s;
