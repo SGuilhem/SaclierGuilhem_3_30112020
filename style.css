@@ -6131,7 +6131,7 @@ header #logo {
   justify-content: center;
 }
 header #logo img {
-  height: 10px;
+  height: 30px;
   padding-left: 25px;
 }
 
@@ -6333,21 +6333,26 @@ main section#restaurants p {
   margin: 0px 0px 10px;
   width: 200px;
 }
-main section#restaurants button {
+main section#restaurants .likebutton {
+  padding: 6px 15px 0px;
   position: relative;
-  left: 285px;
-  bottom: 45px;
-  width: 40px;
-  height: 30px;
-  padding: 0;
-  border: none;
-  background: none;
+  bottom: 50px;
+  left: 270px;
 }
-main section#restaurants i {
-  display: flex;
-  font-size: 1.5rem;
-  align-items: center;
-  justify-content: center;
+main section#restaurants .like::after {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-size: 1.5em;
+}
+main section#restaurants #favorite:checked ~ .like::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  color: red;
+}
+main section#restaurants .visually-hidden {
+  position: absolute;
+  opacity: 0;
 }
 main section#restaurants div.pointed i {
   color: #9356DC;
@@ -6355,7 +6360,7 @@ main section#restaurants div.pointed i {
 main section#restaurants .pointer i {
   font-size: 2rem;
   position: relative;
-  left: 150px;
+  left: 310px;
   bottom: 50px;
 }
 
@@ -6405,6 +6410,8 @@ header {
   padding: 15px 0px 10px;
 }
 header button {
+  position: absolute;
+  top: 20px;
   border: none;
   background: none;
   font-size: 1.3rem;
