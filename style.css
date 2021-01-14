@@ -6146,7 +6146,7 @@ main section#bloc_form #search--responsive {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #F0F0F0;
+  background-color: #e3e3e3;
   height: 50px;
   border: 0px solid #F0F0F0;
   box-shadow: inset 0px 4px 6px #888;
@@ -6161,8 +6161,8 @@ main section#bloc_form .geolocate {
 }
 main section#bloc_form input {
   display: flex;
-  border: 1px solid #F0F0F0;
-  background-color: #F0F0F0;
+  border: 1px solid #e3e3e3;
+  background-color: #e3e3e3;
   color: black;
   font-weight: normal;
   font-size: 0.8rem;
@@ -6192,7 +6192,7 @@ main section#bloc_form button.explorer {
 main section#bloc_form #bloc_explorer {
   width: auto;
   text-align: center;
-  background-color: white;
+  background-color: #F2F2F2;
   height: 280px;
 }
 main section#bloc_form #bloc_explorer h1 {
@@ -6209,7 +6209,7 @@ main section#bloc_form #bloc_explorer p {
   font-size: 1.1rem;
   font-size: 100;
   width: 350px;
-  background-color: white;
+  background-color: #F2F2F2;
   margin-top: 10px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -6225,6 +6225,9 @@ main section#fonctionnement {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+}
+main section#fonctionnement h2 {
+  padding: 0px 0px 20px 15px;
 }
 main section#fonctionnement div#list--steps nav {
   display: flex;
@@ -6282,7 +6285,7 @@ main section#restaurants {
   background-color: #F2F2F2;
 }
 main section#restaurants h2 {
-  padding-top: 50px;
+  padding: 50px 15px 20px;
 }
 main section#restaurants #list--restaurants {
   display: flex;
@@ -6308,6 +6311,20 @@ main section#restaurants div.restaurantthumbnails {
   margin-bottom: 15px;
   border-radius: 25px;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+main section#restaurants .new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 160px;
+  left: 260px;
+  width: 90px;
+  height: 30px;
+  background-color: #99E2D0;
+  border-radius: 5px;
+  color: #1b6150;
+  font-weight: 600;
 }
 main section#restaurants img {
   max-height: 175px;
