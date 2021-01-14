@@ -6131,7 +6131,8 @@ header #logo {
   justify-content: center;
 }
 header #logo img {
-  height: 30px;
+  height: 10px;
+  padding-left: 25px;
 }
 
 /* Bloc form  -  Penser à clear le form quand actif */
