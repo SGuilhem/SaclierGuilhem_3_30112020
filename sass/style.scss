@@ -47,7 +47,7 @@ html {
 
 }
 
-#bloc_page {
+#page {
   width: 100%;
   height: 100%;
   max-width: 100%;
@@ -71,7 +71,7 @@ header {
 
 /* Bloc form  -  Penser à clear le form quand actif */
 
-main section#bloc_form {
+main section#search {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -123,7 +123,7 @@ main section#bloc_form {
         background: linear-gradient(160deg, $secondary-color 10%, $primary-color);
         border: 0px solid $secondary-color;
       }
-    #bloc_explorer{
+    #explorer{
       width: auto;
       text-align: center;
       background-color: $gray;
@@ -153,19 +153,19 @@ main section#bloc_form {
 
 
 @media screen and (min-width:320px) and (max-width: 767px) {
-main section#bloc_form div#bloc_explorer form#search--desktop {
+main section#search div#explorer form#search--desktop {
   display: none;
   }
 }
 
-main section#fonctionnement {
+main section#execution {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   h2 {
     padding: 0px 0px 20px 15px;
   }
-    div#list--steps nav {
+    div#execution--steps nav {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -222,7 +222,7 @@ main section#restaurants {
     h2 {
       padding: 50px 15px 20px;
     }
-    #list--restaurants {
+    #restaurants--list {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -237,7 +237,7 @@ main section#restaurants {
         color: $primary-color;
         }
       }
-      div.restaurantthumbnails {
+      div.restaurant--thumbnails {
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -247,7 +247,7 @@ main section#restaurants {
         border-radius: 25px;
         box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .1);
       }
-        .new {
+        .restaurant--new {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -269,7 +269,7 @@ main section#restaurants {
           object-fit: cover;
           padding: 1px 1px 0px 1px;
         }
-        div.description{
+        div.restaurant--description{
           display: flex;
           flex-direction: column;
           height: 75px;
@@ -286,7 +286,7 @@ main section#restaurants {
             width: 200px;
           }
 
-          .likebutton{
+          .restaurant--likebtn{
             padding: 6px 15px 0px;
             position: relative;
             bottom: 50px;
@@ -355,7 +355,7 @@ html {
 
 }
 
-#bloc_page {
+#page {
   width: 100%;
   height: 100%;
   max-width: 100%;
@@ -406,7 +406,7 @@ main {
 
     }
   }
-  div#menufooter {
+  div#menuandfooter {
     background-color: $gray;
   }
   section#menu {
@@ -419,14 +419,14 @@ main {
     border-top-right-radius: $btn-radius;
     padding-left: 20px;
     padding-right: 20px;
-    #restautitle {
+    #menu--restauranttitle {
       display:flex;
       justify-content: space-between;
       padding-top: 20px;
         h1 {
           font-family: 'Shrikhand', sans-serif;
         }
-      .likebutton{
+      .restaurant--likebtn{
         padding: 6px 15px 0px;
       }
       .like::after {
@@ -469,7 +469,8 @@ main {
       border-bottom: 3px solid $tertiary-color;
     }
   }
-  article .bloccourse {
+  article .restaurant--courses {
+    height: 62px;
     #course1 {
       @include course;
       animation: opacity 1000ms 200ms both;
@@ -550,12 +551,13 @@ main {
           from { opacity: 0; }
           to   { opacity: 1; }
         }
+
       h3 {
         font-size: 0.9rem;
         margin: 0;
         padding: 10px 0 5px;
       }
-      #descriptionprice {
+      #descriptionandprice {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -564,10 +566,43 @@ main {
           p {
             font-size: 0.8rem;
             margin: 0;
+            transition: transform 450ms;
           }
           .price p {
             font-weight: 800;
           }
+        }
+    }
+    :hover > .price {
+      transform: translateX(-45px);
+    }
+    .slidehover {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      top:-77px;
+      left: 268px;
+      border-top-right-radius: $function-radius;
+      border-bottom-right-radius: $function-radius;
+      height: 62px;
+      width: 20%;
+      background-color: $tertiary-color;
+      opacity: 1;
+    }
+    :hover > .slidehover {
+      animation-duration: 1s;
+      animation-name: slidein;
+      animation-direction: alternate;
+    }
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+
+      to {
+        margin-left: 0%;
+        width: 100%;
         }
     }
 }

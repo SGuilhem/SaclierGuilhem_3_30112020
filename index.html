@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="bloc_page">
+  <div id="page">
     <header>
       <div id="logo">
         <a href="index.html">
@@ -16,47 +16,46 @@
       </div>
     </header>
     <main>
-      <section id="bloc_form">
+      <section id="search">
         <form id="search--responsive">
-              <button class="geolocate">
-                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-              </button>
-              <input type="search" placeholder="Paris, Belleville">
+          <button class="geolocate">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            </button>
+            <input type="search" placeholder="Paris, Belleville">
           </form>
-      <div id="bloc_explorer">
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrer des restaurants d'exception, séléctionnés par nos soins.</p>
-        <form id="search--desktop">
-              <button class="geolocate">
-                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-              </button>
-              <input type="search" placeholder="Paris, Belleville">
-        </form>
-              <button type="button" class="explorer" name="explorer">Explorer nos restaurants</button>
-      </div>
+          <div id="explorer">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrer des restaurants d'exception, séléctionnés par nos soins.</p>
+            <form id="search--desktop">
+                <button class="geolocate">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </button>
+                <input type="search" placeholder="Paris, Belleville">
+              </form>
+                <button type="button" class="explorer" name="explorer">Explorer nos restaurants</button>
+              </div>
       </section>
-      <section id="fonctionnement">
+      <section id="execution">
         <h2>Fonctionnement</h2>
-        <div id="list--steps">
+        <div id="execution--steps">
           <nav>
-            <li class="li--fonctionnement"><span class="num">1</span><i class="fas fa-mobile-alt"></i><span="step">Choisissez un restaurant</span></li>
-            <li class="li--fonctionnement"><span class="num">2</span><i class="fas fa-list-ul"></i><span="step">Composez votre menu</span></li>
+            <li class="steps--list"><span class="num">1</span><i class="fas fa-mobile-alt"></i><span="step">Choisissez un restaurant</span></li>
+            <li class="steps--list"><span class="num">2</span><i class="fas fa-list-ul"></i><span="step">Composez votre menu</span></li>
             <li class="active"><span class="num">3</span><i class="fas fa-store"></i><span="step">Dégustez au restaurant</span></li>
           </nav>
         </nav>
       </section>
       <section id="restaurants">
         <h2>Restaurants</h2>
-        <div id="list--restaurants">
+        <div id="restaurants--list">
           <article>
             <a class="restaurant" href="restaurants/lapalettedugout.html">
-              <div class="restaurantthumbnails">
-                <img class="imgrestaurant" src="maquettes/images/restaurants/lapalettedugout.jpg" alt="La palette du goût">
-                <div class="new">Nouveau</div>
-                <div class="description">
+              <div class="restaurant--thumbnails">
+                <img class="restaurant--img" src="maquettes/images/restaurants/lapalettedugout.jpg" alt="La palette du goût">
+                  <div class="restaurant--description">
                   <h3>La palette du goût</h3>
                   <p>Menilmontant</p>
-                  <div class="likebutton">
+                  <div class="restaurant--likebtn">
                     <input type="checkbox" id="favorite" class="visually-hidden"/>
                     <label for="favorite"></label>
                     <div class="like"></div>
@@ -67,13 +66,13 @@
           </article>
           <article>
             <a class="restaurant" href="restaurants/lanoteenchantee.html">
-              <div class="restaurantthumbnails">
-                <img class="imgrestaurant" src="maquettes/images/restaurants/lanoteenchantee.jpg" alt="La note enchantée">
-                <div class="new">Nouveau</div>
-                <div class="description">
+              <div class="restaurant--thumbnails">
+                <img class="restaurant--img" src="maquettes/images/restaurants/lanoteenchantee.jpg" alt="La note enchantée">
+                <div class="restaurant--restaurant--restaurant--new">Nouveau</div>
+                <div class="restaurant--description">
                   <h3>La note enchantée</h3>
                   <p>Charonne</p>
-                  <div class="likebutton">
+                  <div class="restaurant--likebtn">
                     <input type="checkbox" id="favorite" class="visually-hidden"/>
                     <label for="favorite"></label>
                     <div class="like"></div>
@@ -86,12 +85,12 @@
           </article>
           <article>
             <a class="restaurant" href="restaurants/alafrancaise.html">
-              <div class="restaurantthumbnails">
-                <img class="imgrestaurant" src="maquettes/images/restaurants/alafrancaise.jpg" alt="À la française">
-                <div class="description">
+              <div class="restaurant--thumbnails">
+                <img class="restaurant--img" src="maquettes/images/restaurants/alafrancaise.jpg" alt="À la française">
+                <div class="restaurant--description">
                   <h3>À la française</h3>
                   <p>Cité Rouge</p>
-                  <div class="likebutton">
+                  <div class="restaurant--likebtn">
                     <input type="checkbox" id="favorite" class="visually-hidden"/>
                     <label for="favorite"></label>
                     <div class="like"></div>
@@ -102,12 +101,12 @@
           </article>
           <article>
             <a class="restaurant" href="restaurants/lesdelicesdessens.html">
-              <div class="restaurantthumbnails">
-                <img class="imgrestaurant" src="maquettes/images/restaurants/lesdelicesdessens.jpg" alt="Le délice des sens">
-                <div class="description">
+              <div class="restaurant--thumbnails">
+                <img class="restaurant--img" src="maquettes/images/restaurants/lesdelicesdessens.jpg" alt="Le délice des sens">
+                <div class="restaurant--description">
                   <h3>Le délice des sens</h3>
                   <p>Folie-Méricourt</p>
-                  <div class="likebutton">
+                  <div class="restaurant--likebtn">
                     <input type="checkbox" id="favorite" class="visually-hidden"/>
                     <label for="favorite"></label>
                     <div class="like"></div>

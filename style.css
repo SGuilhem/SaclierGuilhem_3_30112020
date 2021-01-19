@@ -6114,7 +6114,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-#bloc_page {
+#page {
   width: 100%;
   height: 100%;
   max-width: 100%;
@@ -6136,13 +6136,13 @@ header #logo img {
 }
 
 /* Bloc form  -  Penser à clear le form quand actif */
-main section#bloc_form {
+main section#search {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   justify-content: center;
 }
-main section#bloc_form #search--responsive {
+main section#search #search--responsive {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -6151,7 +6151,7 @@ main section#bloc_form #search--responsive {
   border: 0px solid #F0F0F0;
   box-shadow: inset 0px 4px 6px #888;
 }
-main section#bloc_form .geolocate {
+main section#search .geolocate {
   display: flex;
   border: 1px solid #F0F0F0;
   font-size: 0.9rem;
@@ -6159,7 +6159,7 @@ main section#bloc_form .geolocate {
   margin-top: auto;
   margin-bottom: auto;
 }
-main section#bloc_form input {
+main section#search input {
   display: flex;
   border: 1px solid #e3e3e3;
   background-color: #e3e3e3;
@@ -6170,17 +6170,17 @@ main section#bloc_form input {
   height: 30px;
   align-self: center;
 }
-main section#bloc_form ::placeholder {
+main section#search ::placeholder {
   display: flex;
   color: black;
   font-weight: normal;
   font-size: 1rem;
 }
-main section#bloc_form :focus {
+main section#search :focus {
   outline: none;
   border: 3px solid #9356DC;
 }
-main section#bloc_form button.explorer {
+main section#search button.explorer {
   border-radius: 30px;
   font-size: 1rem;
   width: 220px;
@@ -6189,13 +6189,13 @@ main section#bloc_form button.explorer {
   background: linear-gradient(160deg, #FF79DA 10%, #9356DC);
   border: 0px solid #FF79DA;
 }
-main section#bloc_form #bloc_explorer {
+main section#search #explorer {
   width: auto;
   text-align: center;
   background-color: #F2F2F2;
   height: 280px;
 }
-main section#bloc_form #bloc_explorer h1 {
+main section#search #explorer h1 {
   display: flex;
   font-size: 1.4rem;
   width: 250px;
@@ -6204,7 +6204,7 @@ main section#bloc_form #bloc_explorer h1 {
   margin-left: auto;
   margin-right: auto;
 }
-main section#bloc_form #bloc_explorer p {
+main section#search #explorer p {
   display: flex;
   font-size: 1.1rem;
   font-size: 100;
@@ -6217,25 +6217,25 @@ main section#bloc_form #bloc_explorer p {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  main section#bloc_form div#bloc_explorer form#search--desktop {
+  main section#search div#explorer form#search--desktop {
     display: none;
   }
 }
-main section#fonctionnement {
+main section#execution {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
-main section#fonctionnement h2 {
+main section#execution h2 {
   padding: 0px 0px 20px 15px;
 }
-main section#fonctionnement div#list--steps nav {
+main section#execution div#execution--steps nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-left: 40px;
 }
-main section#fonctionnement li {
+main section#execution li {
   display: flex;
   list-style: none;
   border-radius: 20px;
@@ -6251,22 +6251,22 @@ main section#fonctionnement li {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
-main section#fonctionnement li.active {
+main section#execution li.active {
   background-color: rgba(147, 86, 220, 0.1);
 }
-main section#fonctionnement li.active i {
+main section#execution li.active i {
   color: #9356DC;
 }
-main section#fonctionnement i {
+main section#execution i {
   font-size: 1.3rem;
   padding-bottom: 2px;
   color: gray;
   margin-right: 25px;
 }
-main section#fonctionnement span.step {
+main section#execution span.step {
   margin-left: 30px;
 }
-main section#fonctionnement span.num {
+main section#execution span.num {
   display: flex;
   position: absolute;
   left: 30px;
@@ -6287,7 +6287,7 @@ main section#restaurants {
 main section#restaurants h2 {
   padding: 50px 15px 20px;
 }
-main section#restaurants #list--restaurants {
+main section#restaurants #restaurants--list {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -6302,7 +6302,7 @@ main section#restaurants a {
 main section#restaurants a:hover {
   color: #9356DC;
 }
-main section#restaurants div.restaurantthumbnails {
+main section#restaurants div.restaurant--thumbnails {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -6312,7 +6312,7 @@ main section#restaurants div.restaurantthumbnails {
   border-radius: 25px;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
 }
-main section#restaurants .new {
+main section#restaurants .restaurant--new {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6334,7 +6334,7 @@ main section#restaurants img {
   object-fit: cover;
   padding: 1px 1px 0px 1px;
 }
-main section#restaurants div.description {
+main section#restaurants div.restaurant--description {
   display: flex;
   flex-direction: column;
   height: 75px;
@@ -6350,7 +6350,7 @@ main section#restaurants p {
   margin: 0px 0px 10px;
   width: 200px;
 }
-main section#restaurants .likebutton {
+main section#restaurants .restaurant--likebtn {
   padding: 6px 15px 0px;
   position: relative;
   bottom: 50px;
@@ -6414,7 +6414,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-#bloc_page {
+#page {
   width: 100%;
   height: 100%;
   max-width: 100%;
@@ -6461,7 +6461,7 @@ main div#backgroundimg img {
   width: 99%;
   padding: 1px 1px 0px 1px;
 }
-main div#menufooter {
+main div#menuandfooter {
   background-color: #F2F2F2;
 }
 main section#menu {
@@ -6475,29 +6475,29 @@ main section#menu {
   padding-left: 20px;
   padding-right: 20px;
 }
-main section#menu #restautitle {
+main section#menu #menu--restauranttitle {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
 }
-main section#menu #restautitle h1 {
+main section#menu #menu--restauranttitle h1 {
   font-family: "Shrikhand", sans-serif;
 }
-main section#menu #restautitle .likebutton {
+main section#menu #menu--restauranttitle .restaurant--likebtn {
   padding: 6px 15px 0px;
 }
-main section#menu #restautitle .like::after {
+main section#menu #menu--restauranttitle .like::after {
   font-family: "Font Awesome 5 Free";
   content: "";
   font-size: 1.5em;
 }
-main section#menu #restautitle #favorite:checked ~ .like::after {
+main section#menu #menu--restauranttitle #favorite:checked ~ .like::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
   color: #9356DC;
 }
-main section#menu #restautitle .visually-hidden {
+main section#menu #menu--restauranttitle .visually-hidden {
   position: absolute;
   opacity: 0;
 }
@@ -6527,7 +6527,10 @@ main section#menu h2:before {
   left: 0%;
   border-bottom: 3px solid #99E2D0;
 }
-main article .bloccourse #course1 {
+main article .restaurant--courses {
+  height: 62px;
+}
+main article .restaurant--courses #course1 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -6553,7 +6556,7 @@ main article .bloccourse #course1 {
     opacity: 1;
   }
 }
-main article .bloccourse #course2 {
+main article .restaurant--courses #course2 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -6579,7 +6582,7 @@ main article .bloccourse #course2 {
     opacity: 1;
   }
 }
-main article .bloccourse #course3 {
+main article .restaurant--courses #course3 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -6605,7 +6608,7 @@ main article .bloccourse #course3 {
     opacity: 1;
   }
 }
-main article .bloccourse #course4 {
+main article .restaurant--courses #course4 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -6631,7 +6634,7 @@ main article .bloccourse #course4 {
     opacity: 1;
   }
 }
-main article .bloccourse #course5 {
+main article .restaurant--courses #course5 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -6657,7 +6660,7 @@ main article .bloccourse #course5 {
     opacity: 1;
   }
 }
-main article .bloccourse #course6 {
+main article .restaurant--courses #course6 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -6683,7 +6686,7 @@ main article .bloccourse #course6 {
     opacity: 1;
   }
 }
-main article .bloccourse #course7 {
+main article .restaurant--courses #course7 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -6709,7 +6712,7 @@ main article .bloccourse #course7 {
     opacity: 1;
   }
 }
-main article .bloccourse #course8 {
+main article .restaurant--courses #course8 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -6735,7 +6738,7 @@ main article .bloccourse #course8 {
     opacity: 1;
   }
 }
-main article .bloccourse #course9 {
+main article .restaurant--courses #course9 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -6761,7 +6764,7 @@ main article .bloccourse #course9 {
     opacity: 1;
   }
 }
-main article .bloccourse #course10 {
+main article .restaurant--courses #course10 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -6787,24 +6790,56 @@ main article .bloccourse #course10 {
     opacity: 1;
   }
 }
-main article .bloccourse h3 {
+main article .restaurant--courses h3 {
   font-size: 0.9rem;
   margin: 0;
   padding: 10px 0 5px;
 }
-main article .bloccourse #descriptionprice {
+main article .restaurant--courses #descriptionandprice {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
   padding: 5px 0 10px;
 }
-main article .bloccourse #descriptionprice p {
+main article .restaurant--courses #descriptionandprice p {
   font-size: 0.8rem;
   margin: 0;
+  transition: transform 450ms;
 }
-main article .bloccourse #descriptionprice .price p {
+main article .restaurant--courses #descriptionandprice .price p {
   font-weight: 800;
+}
+main :hover > .price {
+  transform: translateX(-45px);
+}
+main .slidehover {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: -77px;
+  left: 268px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 62px;
+  width: 20%;
+  background-color: #99E2D0;
+  opacity: 1;
+}
+main :hover > .slidehover {
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 div#btn--order {
