@@ -423,6 +423,9 @@ main {
 
     }
   }
+  div#menuandfooter {
+    background-color: $gray;
+  }
   section#menu {
     position: relative;
     bottom: 100px;

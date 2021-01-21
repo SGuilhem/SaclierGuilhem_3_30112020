@@ -6489,6 +6489,9 @@ main div#backgroundimg img {
   width: 99%;
   padding: 1px 1px 0px 1px;
 }
+main div#menuandfooter {
+  background-color: #F2F2F2;
+}
 main section#menu {
   position: relative;
   bottom: 100px;
