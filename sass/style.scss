@@ -339,10 +339,6 @@ main section#restaurants {
           bottom: 50px;
           }
 }
-
-footer {
-  background-color: #383838;
-      padding: 20px 0px 50px 20px;
   h4 {
     font-size: 1rem;
     margin: 0px;
@@ -366,7 +362,6 @@ footer {
       padding-right: 5px;
       width: 20px;
     }
-  }
 
 
 /* Restaurants */
@@ -427,9 +422,6 @@ main {
       padding: 1px 1px 0px 1px;
 
     }
-  }
-  div#menuandfooter {
-    background-color: $gray;
   }
   section#menu {
     position: relative;
@@ -495,79 +487,43 @@ main {
     height: 62px;
     #course1 {
       @include course;
-      animation: opacity 1000ms 200ms both;
-      }
-      @keyframes opacity {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+      animation: opacity 1000ms 1200ms both;
       }
     #course2 {
       @include course;
-      animation: opacity 1000ms 400ms both;
-      }
-      @keyframes opacity {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+      animation: opacity 1000ms 1400ms both;
       }
     #course3 {
       @include course;
-      animation: opacity 1000ms 600ms both;
-      }
-      @keyframes opacity {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+      animation: opacity 1000ms 1600ms both;
       }
     #course4 {
       @include course;
-      animation: opacity 1000ms 800ms both;
-      }
-      @keyframes opacity {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+      animation: opacity 1000ms 1800ms both;
       }
     #course5 {
       @include course;
-      animation: opacity 250ms 1000ms both;
-      }
-      @keyframes opacity {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+      animation: opacity 1000ms 2000ms both;
       }
     #course6 {
       @include course;
-      animation: opacity 250ms 1200ms both;
-      }
-      @keyframes opacity {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+      animation: opacity 1000ms 2200ms both;
       }
     #course7 {
       @include course;
-      animation: opacity 250ms 1400ms both;
-      }
-      @keyframes opacity {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+      animation: opacity 1000ms 2400ms both;
       }
     #course8 {
       @include course;
-      animation: opacity 250ms 1200ms both;
-      }
-      @keyframes opacity {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+      animation: opacity 1000ms 2600ms both;
       }
     #course9 {
       @include course;
-      animation: opacity 250ms 1400ms both;
-      }
-      @keyframes opacity {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+      animation: opacity 1000ms 2800ms both;
       }
       #course10 {
         @include course;
-        animation: opacity 250ms 1600ms both;
+        animation: opacity 1000ms 3000ms both;
         }
         @keyframes opacity {
           from { opacity: 0; }

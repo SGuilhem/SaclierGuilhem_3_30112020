@@ -6410,30 +6410,29 @@ main section#restaurants .pointer i {
   bottom: 50px;
 }
 
-footer {
-  background-color: #383838;
-  padding: 20px 0px 50px 20px;
-}
-footer h4 {
+h4 {
   font-size: 1rem;
   margin: 0px;
   padding-bottom: 10px;
   font-family: "Shrikhand", sans-serif;
   color: white;
 }
-footer nav {
+
+nav {
   display: flex;
   flex-direction: column;
 }
-footer a {
+
+a {
   text-decoration: none;
   color: white;
   padding: 5px 0px 5px;
 }
-footer a:hover {
+a:hover {
   color: #9356DC;
 }
-footer i {
+
+i {
   padding-right: 5px;
   width: 20px;
 }
@@ -6489,9 +6488,6 @@ main div#backgroundimg img {
   bottom: 200px;
   width: 99%;
   padding: 1px 1px 0px 1px;
-}
-main div#menuandfooter {
-  background-color: #F2F2F2;
 }
 main section#menu {
   position: relative;
@@ -6575,15 +6571,7 @@ main article .restaurant--courses #course1 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 1000ms 200ms both;
-}
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: opacity 1000ms 1200ms both;
 }
 main article .restaurant--courses #course2 {
   display: flex;
@@ -6601,15 +6589,7 @@ main article .restaurant--courses #course2 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 1000ms 400ms both;
-}
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: opacity 1000ms 1400ms both;
 }
 main article .restaurant--courses #course3 {
   display: flex;
@@ -6627,15 +6607,7 @@ main article .restaurant--courses #course3 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 1000ms 600ms both;
-}
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: opacity 1000ms 1600ms both;
 }
 main article .restaurant--courses #course4 {
   display: flex;
@@ -6653,15 +6625,7 @@ main article .restaurant--courses #course4 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 1000ms 800ms both;
-}
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: opacity 1000ms 1800ms both;
 }
 main article .restaurant--courses #course5 {
   display: flex;
@@ -6679,15 +6643,7 @@ main article .restaurant--courses #course5 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 1000ms both;
-}
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: opacity 1000ms 2000ms both;
 }
 main article .restaurant--courses #course6 {
   display: flex;
@@ -6705,15 +6661,7 @@ main article .restaurant--courses #course6 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 1200ms both;
-}
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: opacity 1000ms 2200ms both;
 }
 main article .restaurant--courses #course7 {
   display: flex;
@@ -6731,15 +6679,7 @@ main article .restaurant--courses #course7 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 1400ms both;
-}
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: opacity 1000ms 2400ms both;
 }
 main article .restaurant--courses #course8 {
   display: flex;
@@ -6757,15 +6697,7 @@ main article .restaurant--courses #course8 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 1200ms both;
-}
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: opacity 1000ms 2600ms both;
 }
 main article .restaurant--courses #course9 {
   display: flex;
@@ -6783,15 +6715,7 @@ main article .restaurant--courses #course9 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 1400ms both;
-}
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: opacity 1000ms 2800ms both;
 }
 main article .restaurant--courses #course10 {
   display: flex;
@@ -6809,7 +6733,7 @@ main article .restaurant--courses #course10 {
   justify-content: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  animation: opacity 250ms 1600ms both;
+  animation: opacity 1000ms 3000ms both;
 }
 @keyframes opacity {
   from {
