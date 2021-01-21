@@ -43,7 +43,7 @@ $num-radius: 100%;
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -70,25 +70,25 @@ html {
   max-width: 100%;
   overflow-x: hidden;
   animation: opacity 1000ms 1000ms both;
-  }
-  @keyframes opacity {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
+}
+@keyframes opacity {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
 /* Header */
 
 header {
-    padding: 15px 0px 10px;
-      #logo {
-        display: flex;
-        width: auto;
-        justify-content: center;
-          img {
-            height: 30px;
-            padding-left: 25px;
-          }
-      }
+  padding: 15px 0px 10px;
+  #logo {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    img {
+      height: 30px;
+      padding-left: 25px;
+    }
+  }
 }
 
 /* Bloc form  -  Penser à clear le form quand actif */
@@ -98,85 +98,85 @@ main section#search {
   flex-direction: column;
   border-radius: 15px;
   justify-content: center;
-    #search--responsive {
+  #search--responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: darken(#F0F0F0, 5%);
+    height: 50px;
+    border: 0px solid #F0F0F0;
+    box-shadow: inset 0px 4px 6px #888;
+  }
+  .geolocate{
+    display: flex;
+    border: 1px solid #F0F0F0;
+    font-size: 0.9rem;
+    background-color: #F0F0F0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  & input {
+    display: flex;
+    border: 1px solid darken(#F0F0F0, 5%);
+    background-color: darken(#F0F0F0, 5%);
+    color: black;
+    font-weight: normal;
+    font-size: 0.8rem;
+    width: 140px;
+    height: 30px;
+    align-self: center;
+  }
+  & ::placeholder {
+    display: flex;
+    color: black;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+  & :focus {
+    outline: none;
+    border: 3px solid $primary-color;
+  }
+  button.explorer{
+    border-radius: $btn-radius;
+    font-size: 1rem;
+    width: 220px;
+    height: 45px;
+    color: white;
+    background: linear-gradient(160deg, $secondary-color 10%, $primary-color);
+    border: 0px solid $secondary-color;
+  }
+  #explorer{
+    width: auto;
+    text-align: center;
+    background-color: $gray;
+    height: 280px;
+    h1 {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      background-color: darken(#F0F0F0, 5%);
-      height: 50px;
-      border: 0px solid #F0F0F0;
-      box-shadow: inset 0px 4px 6px #888;
+      font-size: 1.4rem;
+      width: 250px;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      margin-left: auto;
+      margin-right: auto;
     }
-      .geolocate{
+    p {
       display: flex;
-      border: 1px solid #F0F0F0;
-      font-size: 0.9rem;
-      background-color: #F0F0F0;
-      margin-top: auto;
-      margin-bottom: auto;
-    }
-       & input {
-        display: flex;
-        border: 1px solid darken(#F0F0F0, 5%);
-        background-color: darken(#F0F0F0, 5%);
-        color: black;
-        font-weight: normal;
-        font-size: 0.8rem;
-        width: 140px;
-        height: 30px;
-        align-self: center;
-      }
-      & ::placeholder {
-        display: flex;
-        color: black;
-        font-weight: normal;
-        font-size: 1rem;
-      }
-      & :focus {
-        outline: none;
-        border: 3px solid $primary-color;
-      }
-      button.explorer{
-        border-radius: $btn-radius;
-        font-size: 1rem;
-        width: 220px;
-        height: 45px;
-        color: white;
-        background: linear-gradient(160deg, $secondary-color 10%, $primary-color);
-        border: 0px solid $secondary-color;
-      }
-    #explorer{
-      width: auto;
-      text-align: center;
+      font-size: 1.1rem;
+      font-size: 100;
+      width: 350px;
       background-color: $gray;
-      height: 280px;
-        h1 {
-          display: flex;
-          font-size: 1.4rem;
-          width: 250px;
-          margin-top: 35px;
-          margin-bottom: 15px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        p {
-          display: flex;
-          font-size: 1.1rem;
-          font-size: 100;
-          width: 350px;
-          background-color: $gray;
-          margin-top: 10px;
-          margin-bottom: 30px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
+      margin-top: 10px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 
 @media screen and (min-width:320px) and (max-width: 767px) {
-main section#search div#explorer form#search--desktop {
-  display: none;
+  main section#search div#explorer form#search--desktop {
+    display: none;
   }
 }
 
@@ -187,188 +187,188 @@ main section#execution {
   h2 {
     padding: 0px 0px 20px 15px;
   }
-    div#execution--steps nav {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding-left: 40px;
-    }
-      li {
-        display: flex;
-        list-style: none;
-        border-radius: $function-radius;
-        font-size: 1rem;
-        width: 300px;
-        height: 70px;
-        color: black;
-        background: #F2F2F2;
-        border: 0px solid #F2F2F2;
-        margin: 10px 0px 15px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
-    }
-      li.active {
-        background-color: rgba($primary-color, 0.1);
-      }
-      li.active i {
-        color: $primary-color;
-      }
-      i{
-        font-size: 1.3rem;
-        padding-bottom: 2px;
-        color: gray;
-        margin-right: 25px;
-      }
-      span.step {
-        margin-left: 30px;
-      }
-      span.num {
-        display: flex;
-        position: absolute;
-        left: 30px;
-        font-size: 0.8rem;
-        background-color: $primary-color;
-        color: white;
-        border-radius: $num-radius;
-        width: 25px;
-        height: 25px;
-        align-items: center;
-        justify-content: center;
-      }
+  div#execution--steps nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 40px;
+  }
+  li {
+    display: flex;
+    list-style: none;
+    border-radius: $function-radius;
+    font-size: 1rem;
+    width: 300px;
+    height: 70px;
+    color: black;
+    background: #F2F2F2;
+    border: 0px solid #F2F2F2;
+    margin: 10px 0px 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
+  }
+  li.active {
+    background-color: rgba($primary-color, 0.1);
+  }
+  li.active i {
+    color: $primary-color;
+  }
+  i{
+    font-size: 1.3rem;
+    padding-bottom: 2px;
+    color: gray;
+    margin-right: 25px;
+  }
+  span.step {
+    margin-left: 30px;
+  }
+  span.num {
+    display: flex;
+    position: absolute;
+    left: 30px;
+    font-size: 0.8rem;
+    background-color: $primary-color;
+    color: white;
+    border-radius: $num-radius;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 main section#restaurants {
   margin-top: 60px;
   background-color: $gray;
-    h2 {
-      padding: 50px 15px 20px;
-    }
-    #restaurants--list {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-content: space-between;
-      height: auto;
-      padding-bottom: 55px;
-      }
-        a {
-        text-decoration: none;
-        color: black;
-        &:hover {
-        color: $primary-color;
-        }
-      }
-      div.restaurant--thumbnails {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        height: auto;
-        margin-bottom: 15px;
-        border-radius: 25px;
-        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .1);
-      }
-        .restaurant--new {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          bottom: 160px;
-          left: 260px;
-          width: 90px;
-          height: 30px;
-          background-color: $tertiary-color;
-          border-radius: 5px;
-          color: darken($tertiary-color, 50%);
-          font-weight: 600;
-        }
-        img {
-          max-height: 175px;
-          border-top-left-radius: 25px;
-          border-top-right-radius: 25px;
-          object-position: 50% 50%;
-          object-fit: cover;
-          padding: 1px 1px 0px 1px;
-        }
-        div.restaurant--description{
-          display: flex;
-          flex-direction: column;
-          height: 75px;
-          justify-content: space-between;
-          padding: 0px 0px 0px 15px;
-        }
-          h3 {
-            font-size: 1.1rem;
-            margin: 15px 0px 5px;
-            width: 200px;
-          }
-          p {
-            margin: 0px 0px 10px;
-            width: 200px;
-          }
-
-          .restaurant--likebtn{
-            padding: 6px 15px 0px;
-            position: relative;
-            bottom: 50px;
-            left: 270px;
-          }
-          .like::after {
-            font-family: "Font Awesome 5 Free";
-            content: "\f004";
-            font-size: 1.5em;
-          }
-          #favorite:checked ~ .like::after {
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f004";
-            color: $primary-color;
-          }
-          .visually-hidden {
-            position: absolute;
-            opacity: 0;
-          }
-        div.pointed i{
-          color: $primary-color;
-        }
-        .pointer i {
-          font-size: 2rem;
-          position: relative;
-          left: 310px;
-          bottom: 50px;
-          }
-}
-  h4 {
-    font-size: 1rem;
-    margin: 0px;
-    padding-bottom: 10px;
-    font-family: 'Shrikhand', sans-serif;
-    color: white;
+  h2 {
+    padding: 50px 15px 20px;
   }
-  nav {
+  #restaurants--list {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+    height: auto;
+    padding-bottom: 55px;
   }
-    a {
-      text-decoration: none;
-      color: white;
-      padding: 5px 0px 5px;
-      &:hover {
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
       color: $primary-color;
-      }
     }
-    i {
-      padding-right: 5px;
-      width: 20px;
-    }
+  }
+  div.restaurant--thumbnails {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .1);
+  }
+  .restaurant--new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 160px;
+    left: 260px;
+    width: 90px;
+    height: 30px;
+    background-color: $tertiary-color;
+    border-radius: 5px;
+    color: darken($tertiary-color, 50%);
+    font-weight: 600;
+  }
+  img {
+    max-height: 175px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-position: 50% 50%;
+    object-fit: cover;
+    padding: 1px 1px 0px 1px;
+  }
+  div.restaurant--description{
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    justify-content: space-between;
+    padding: 0px 0px 0px 15px;
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin: 15px 0px 5px;
+    width: 200px;
+  }
+  p {
+    margin: 0px 0px 10px;
+    width: 200px;
+  }
+
+  .restaurant--likebtn{
+    padding: 6px 15px 0px;
+    position: relative;
+    bottom: 50px;
+    left: 270px;
+  }
+  .like::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f004";
+    font-size: 1.5em;
+  }
+  #favorite:checked ~ .like::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f004";
+    color: $primary-color;
+  }
+  .visually-hidden {
+    position: absolute;
+    opacity: 0;
+  }
+  div.pointed i{
+    color: $primary-color;
+  }
+  .pointer i {
+    font-size: 2rem;
+    position: relative;
+    left: 310px;
+    bottom: 50px;
+  }
+}
+h4 {
+  font-size: 1rem;
+  margin: 0px;
+  padding-bottom: 10px;
+  font-family: 'Shrikhand', sans-serif;
+  color: white;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 0px 5px;
+  &:hover {
+    color: $primary-color;
+  }
+}
+i {
+  padding-right: 5px;
+  width: 20px;
+}
 
 
 /* Restaurants */
 
 
 html {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -381,31 +381,31 @@ html {
 /* Header */
 
 header {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0px 10px;
+  button {
+    position: absolute;
+    top: 20px;
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    padding-left: 20px;
+    color: black;
+  }
+  a {
+    color: black;
+  }
+  #logo {
     display: flex;
-    flex-direction: row;
-    padding: 15px 0px 10px;
-      button {
-        position: absolute;
-        top: 20px;
-        border: none;
-        background: none;
-        font-size: 1.3rem;
-        padding-left: 20px;
-        color: black;
-      }
-      a {
-        color: black;
-      }
-      #logo {
-        display: flex;
-        width: auto;
-        justify-content: center;
-        padding-right: 40px;
-        margin: auto;
-          img {
-            height: 30px;
-          }
-      }
+    width: auto;
+    justify-content: center;
+    padding-right: 40px;
+    margin: auto;
+    img {
+      height: 30px;
+    }
+  }
 }
 
 /* Main */
@@ -440,9 +440,9 @@ main {
       display:flex;
       justify-content: space-between;
       padding-top: 20px;
-        h1 {
-          font-family: 'Shrikhand', sans-serif;
-        }
+      h1 {
+        font-family: 'Shrikhand', sans-serif;
+      }
       .restaurant--likebtn{
         padding: 6px 15px 0px;
       }
@@ -463,20 +463,20 @@ main {
       }
     }
 
-  article h2{
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: lighter;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    position: relative;
-    animation: opacity 2s;
+    article h2{
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: lighter;
+      padding-top: 20px;
+      padding-bottom: 5px;
+      position: relative;
+      animation: opacity 2s;
     }
     @keyframes opacity {
       from { opacity: 0; }
       to   { opacity: 1; }
-  }
-  h2:before{
+    }
+    h2:before{
       content: "";
       position: absolute;
       width: 40px;
@@ -491,101 +491,101 @@ main {
     #course1 {
       @include course;
       animation: opacity 1000ms 1200ms both;
-      }
+    }
     #course2 {
       @include course;
       animation: opacity 1000ms 1400ms both;
-      }
+    }
     #course3 {
       @include course;
       animation: opacity 1000ms 1600ms both;
-      }
+    }
     #course4 {
       @include course;
       animation: opacity 1000ms 1800ms both;
-      }
+    }
     #course5 {
       @include course;
       animation: opacity 1000ms 2000ms both;
-      }
+    }
     #course6 {
       @include course;
       animation: opacity 1000ms 2200ms both;
-      }
+    }
     #course7 {
       @include course;
       animation: opacity 1000ms 2400ms both;
-      }
+    }
     #course8 {
       @include course;
       animation: opacity 1000ms 2600ms both;
-      }
+    }
     #course9 {
       @include course;
       animation: opacity 1000ms 2800ms both;
-      }
-      #course10 {
-        @include course;
-        animation: opacity 1000ms 3000ms both;
-        }
-        @keyframes opacity {
-          from { opacity: 0; }
-          to   { opacity: 1; }
-        }
+    }
+    #course10 {
+      @include course;
+      animation: opacity 1000ms 3000ms both;
+    }
+    @keyframes opacity {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
 
-      h3 {
-        font-size: 0.9rem;
-        margin: 0;
-        padding: 10px 0 5px;
-      }
-      #descriptionandprice {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-        padding: 5px 0 10px;
-          p {
-            font-size: 0.8rem;
-            margin: 0;
-            transition: transform 450ms;
-          }
-          .price p {
-            font-weight: 800;
-          }
-        }
+    h3 {
+      font-size: 0.9rem;
+      margin: 0;
+      padding: 10px 0 5px;
     }
-    :hover > .price {
-      transform: translateX(-45px);
-    }
-    .slidehover {
+    #descriptionandprice {
       display: flex;
       flex-direction: row;
-      position: relative;
-      top:-77px;
-      left: 268px;
-      border-top-right-radius: $function-radius;
-      border-bottom-right-radius: $function-radius;
-      height: 62px;
-      width: 20%;
-      background-color: $tertiary-color;
-      opacity: 1;
-    }
-    :hover > .slidehover {
-      animation-duration: 1s;
-      animation-name: slidein;
-      animation-direction: alternate;
-    }
-    @keyframes slidein {
-      from {
-        margin-left: 100%;
-        width: 300%;
+      justify-content: space-between;
+      width: 90%;
+      padding: 5px 0 10px;
+      p {
+        font-size: 0.8rem;
+        margin: 0;
+        transition: transform 450ms;
       }
-
-      to {
-        margin-left: 0%;
-        width: 100%;
-        }
+      .price p {
+        font-weight: 800;
+      }
     }
+  }
+  :hover > .price {
+    transform: translateX(-45px);
+  }
+  .slidehover {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:-77px;
+    left: 268px;
+    border-top-right-radius: $function-radius;
+    border-bottom-right-radius: $function-radius;
+    height: 62px;
+    width: 20%;
+    background-color: $tertiary-color;
+    opacity: 1;
+  }
+  :hover > .slidehover {
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-direction: alternate;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 }
 
 div#btn--order {
@@ -593,16 +593,16 @@ div#btn--order {
   justify-content: center;
   background-color: $gray;
   padding-bottom: 80px;
-    button.commander{
-      border-radius: $btn-radius;
-      font-size: 1rem;
-      width: 220px;
-      height: 45px;
-      color: white;
-      background: linear-gradient($secondary-color, 55%, $primary-color);
-      border: 0px solid $secondary-color;
-      text-align: center;
-    }
+  button.commander{
+    border-radius: $btn-radius;
+    font-size: 1rem;
+    width: 220px;
+    height: 45px;
+    color: white;
+    background: linear-gradient($secondary-color, 55%, $primary-color);
+    border: 0px solid $secondary-color;
+    text-align: center;
+  }
 }
 
 
@@ -623,16 +623,16 @@ footer {
     display: flex;
     flex-direction: column;
   }
-    a {
-      text-decoration: none;
-      color: white;
-      padding: 5px 0px 5px;
-      &:hover {
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 0px 5px;
+    &:hover {
       color: $primary-color;
-      }
-    }
-    i {
-      padding-right: 5px;
-      width: 20px;
     }
   }
+  i {
+    padding-right: 5px;
+    width: 20px;
+  }
+}

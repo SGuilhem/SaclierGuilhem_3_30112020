@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil Ohmyfood</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil Ohmyfood</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="loader"></div>
@@ -20,21 +20,21 @@
       <section id="search">
         <form id="search--responsive">
           <button class="geolocate">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+          </button>
+          <input type="search" placeholder="Paris, Belleville">
+        </form>
+        <div id="explorer">
+          <h1>Réservez le menu qui vous convient</h1>
+          <p>Découvrer des restaurants d'exception, séléctionnés par nos soins.</p>
+          <form id="search--desktop">
+            <button class="geolocate">
               <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
             </button>
             <input type="search" placeholder="Paris, Belleville">
           </form>
-          <div id="explorer">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrer des restaurants d'exception, séléctionnés par nos soins.</p>
-            <form id="search--desktop">
-                <button class="geolocate">
-                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                </button>
-                <input type="search" placeholder="Paris, Belleville">
-              </form>
-                <button type="button" class="explorer" name="explorer">Explorer nos restaurants</button>
-              </div>
+          <button type="button" class="explorer" name="explorer">Explorer nos restaurants</button>
+        </div>
       </section>
       <section id="execution">
         <h2>Fonctionnement</h2>
@@ -53,7 +53,7 @@
             <a class="restaurant" href="restaurants/lapalettedugout.html">
               <div class="restaurant--thumbnails">
                 <img class="restaurant--img" src="maquettes/images/restaurants/lapalettedugout.jpg" alt="La palette du goût">
-                  <div class="restaurant--description">
+                <div class="restaurant--description">
                   <h3>La palette du goût</h3>
                   <p>Menilmontant</p>
                   <div class="restaurant--likebtn">
@@ -123,10 +123,10 @@
   <footer>
     <h4>ohmyfood</h4>
     <nav>
-        <a href="#"><i class="fas fa-utensils"></i>Proposez un restaurant</a>
-        <a href="#"><i class="fas fa-hands-helping"></i>Devenir Partenaire</a>
-        <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
+      <a href="#"><i class="fas fa-utensils"></i>Proposez un restaurant</a>
+      <a href="#"><i class="fas fa-hands-helping"></i>Devenir Partenaire</a>
+      <a href="#">Mentions légales</a>
+      <a href="#">Contact</a>
     </nav>
   </footer>
 </body>
