@@ -6236,7 +6236,6 @@ main section#search #explorer h1 {
 main section#search #explorer p {
   display: flex;
   font-size: 1.1rem;
-  font-size: 100;
   width: 350px;
   background-color: #F2F2F2;
   margin-top: 10px;
@@ -6324,19 +6323,27 @@ main section#restaurants #restaurants--list {
   height: auto;
   padding-bottom: 55px;
 }
-main section#restaurants a {
+main section#restaurants #restaurant {
+  position: relative;
   text-decoration: none;
   color: black;
 }
-main section#restaurants a:hover {
+main section#restaurants #restaurant:hover {
   color: #9356DC;
+}
+main section#restaurants #restaurant a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 main section#restaurants div.restaurant--thumbnails {
   display: flex;
   flex-direction: column;
+  position: relative;
   background-color: white;
   width: 100%;
-  height: auto;
+  height: 100%;
   margin-bottom: 15px;
   border-radius: 25px;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
@@ -6345,8 +6352,8 @@ main section#restaurants .restaurant--new {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  bottom: 160px;
+  position: absolute;
+  top: 20px;
   left: 260px;
   width: 90px;
   height: 30px;
@@ -6357,6 +6364,7 @@ main section#restaurants .restaurant--new {
 }
 main section#restaurants img {
   max-height: 175px;
+  width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   object-position: 50% 50%;
@@ -6483,6 +6491,41 @@ main {
   flex-direction: column;
   width: auto;
   background-color: white;
+  /*
+    :focus > .price {
+      transform: translateX(-45px);
+    }
+    .slidehover {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      top:-77px;
+      left: 268px;
+      border-top-right-radius: $function-radius;
+      border-bottom-right-radius: $function-radius;
+      height: 62px;
+      width: 20%;
+      background-color: $tertiary-color;
+      opacity: 1;
+    }
+    :hover > .slidehover {
+      animation-duration: 1s;
+      animation-name: slidein;
+      animation-direction: alternate;
+    }
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+  } */
+  /* Footer */
 }
 main div#backgroundimg img {
   bottom: 200px;
@@ -6555,187 +6598,87 @@ main section#menu h2:before {
   left: 0%;
   border-bottom: 3px solid #99E2D0;
 }
-main article .restaurant--courses {
+main a.restaurant--courses {
   height: 62px;
-}
-main article .restaurant--courses #course1 {
   display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  font-size: 1rem;
-  height: auto;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 10px;
   color: black;
-  background: #F2F2F2;
-  border: 0px solid #F2F2F2;
-  margin: 10px 0px 15px;
-  padding-left: 10px;
-  text-align: center;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  opacity: 1;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.25s linear;
+  /* #course1 {
+      @include course;
+      animation: opacity 1000ms 1200ms both;
+    }
+    #course2 {
+      @include course;
+      animation: opacity 1000ms 1400ms both;
+    }
+    #course3 {
+      @include course;
+      animation: opacity 1000ms 1600ms both;
+    }
+    #course4 {
+      @include course;
+      animation: opacity 1000ms 1800ms both;
+    }
+    #course5 {
+      @include course;
+      animation: opacity 1000ms 2000ms both;
+    }
+    #course6 {
+      @include course;
+      animation: opacity 1000ms 2200ms both;
+    }
+    #course7 {
+      @include course;
+      animation: opacity 1000ms 2400ms both;
+    }
+    #course8 {
+      @include course;
+      animation: opacity 1000ms 2600ms both;
+    }
+    #course9 {
+      @include course;
+      animation: opacity 1000ms 2800ms both;
+    }
+    #course10 {
+      @include course;
+      animation: opacity 1000ms 3000ms both;
+    } */
+}
+main a.restaurant--courses.course--1 {
   animation: opacity 1000ms 1200ms both;
 }
-main article .restaurant--courses #course2 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  font-size: 1rem;
-  height: auto;
-  color: black;
-  background: #F2F2F2;
-  border: 0px solid #F2F2F2;
-  margin: 10px 0px 15px;
-  padding-left: 10px;
-  text-align: center;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  opacity: 1;
+main a.restaurant--courses.course--2 {
   animation: opacity 1000ms 1400ms both;
 }
-main article .restaurant--courses #course3 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  font-size: 1rem;
-  height: auto;
-  color: black;
-  background: #F2F2F2;
-  border: 0px solid #F2F2F2;
-  margin: 10px 0px 15px;
-  padding-left: 10px;
-  text-align: center;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  opacity: 1;
+main a.restaurant--courses.course--3 {
   animation: opacity 1000ms 1600ms both;
 }
-main article .restaurant--courses #course4 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  font-size: 1rem;
-  height: auto;
-  color: black;
-  background: #F2F2F2;
-  border: 0px solid #F2F2F2;
-  margin: 10px 0px 15px;
-  padding-left: 10px;
-  text-align: center;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  opacity: 1;
+main a.restaurant--courses.course--4 {
   animation: opacity 1000ms 1800ms both;
 }
-main article .restaurant--courses #course5 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  font-size: 1rem;
-  height: auto;
-  color: black;
-  background: #F2F2F2;
-  border: 0px solid #F2F2F2;
-  margin: 10px 0px 15px;
-  padding-left: 10px;
-  text-align: center;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  opacity: 1;
+main a.restaurant--courses.course--5 {
   animation: opacity 1000ms 2000ms both;
 }
-main article .restaurant--courses #course6 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  font-size: 1rem;
-  height: auto;
-  color: black;
-  background: #F2F2F2;
-  border: 0px solid #F2F2F2;
-  margin: 10px 0px 15px;
-  padding-left: 10px;
-  text-align: center;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  opacity: 1;
+main a.restaurant--courses.course--6 {
   animation: opacity 1000ms 2200ms both;
 }
-main article .restaurant--courses #course7 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  font-size: 1rem;
-  height: auto;
-  color: black;
-  background: #F2F2F2;
-  border: 0px solid #F2F2F2;
-  margin: 10px 0px 15px;
-  padding-left: 10px;
-  text-align: center;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  opacity: 1;
+main a.restaurant--courses.course--7 {
   animation: opacity 1000ms 2400ms both;
 }
-main article .restaurant--courses #course8 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  font-size: 1rem;
-  height: auto;
-  color: black;
-  background: #F2F2F2;
-  border: 0px solid #F2F2F2;
-  margin: 10px 0px 15px;
-  padding-left: 10px;
-  text-align: center;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  opacity: 1;
+main a.restaurant--courses.course--8 {
   animation: opacity 1000ms 2600ms both;
 }
-main article .restaurant--courses #course9 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  font-size: 1rem;
-  height: auto;
-  color: black;
-  background: #F2F2F2;
-  border: 0px solid #F2F2F2;
-  margin: 10px 0px 15px;
-  padding-left: 10px;
-  text-align: center;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  opacity: 1;
+main a.restaurant--courses.course--9 {
   animation: opacity 1000ms 2800ms both;
 }
-main article .restaurant--courses #course10 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  font-size: 1rem;
-  height: auto;
-  color: black;
-  background: #F2F2F2;
-  border: 0px solid #F2F2F2;
-  margin: 10px 0px 15px;
-  padding-left: 10px;
-  text-align: center;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  opacity: 1;
+main a.restaurant--courses.course--10 {
   animation: opacity 1000ms 3000ms both;
 }
 @keyframes opacity {
@@ -6746,65 +6689,64 @@ main article .restaurant--courses #course10 {
     opacity: 1;
   }
 }
-main article .restaurant--courses h3 {
-  font-size: 0.9rem;
-  margin: 0;
-  padding: 10px 0 5px;
+main a.restaurant--courses .content {
+  padding: 10px;
+  overflow: hidden;
 }
-main article .restaurant--courses #descriptionandprice {
+main a.restaurant--courses .content h3 {
+  font-size: 1em;
+}
+main a.restaurant--courses .content p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.8em;
+  padding-top: 5px;
+}
+main a.restaurant--courses .price {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90%;
-  padding: 5px 0 10px;
+  font-weight: bold;
+  align-self: flex-end;
+  padding: 10px;
+  position: absolute;
+  right: 30px;
 }
-main article .restaurant--courses #descriptionandprice p {
-  font-size: 0.8rem;
-  margin: 0;
-  transition: transform 450ms;
-}
-main article .restaurant--courses #descriptionandprice .price p {
-  font-weight: 800;
-}
-main :hover > .price {
-  transform: translateX(-45px);
-}
-main .slidehover {
+main a.restaurant--courses .validate {
   display: flex;
-  flex-direction: row;
-  position: relative;
-  top: -77px;
-  left: 268px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  height: 62px;
-  width: 20%;
+  justify-content: center;
+  align-items: center;
   background-color: #99E2D0;
+  width: 0;
+  height: 62px;
+  transition: all 0.25s linear;
+}
+main a.restaurant--courses .validate span {
+  opacity: 0;
+  transform: rotate(180deg) scale(0.8);
+  transition: all 0.25s linear;
+}
+main a.restaurant--courses:focus {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+main a.restaurant--courses:focus .price {
+  transform: translateX(-40px);
+  transition: all 0.25s linear;
+}
+main a.restaurant--courses:focus .validate {
+  width: 50px;
+  height: 62px;
+}
+main a.restaurant--courses:focus .validate span {
   opacity: 1;
+  transform: rotate(0) scale(1.4);
 }
-main :hover > .slidehover {
-  animation-duration: 1s;
-  animation-name: slidein;
-  animation-direction: alternate;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-div#btn--order {
+main div#btn--order {
   display: flex;
   justify-content: center;
   background-color: #F2F2F2;
   padding-bottom: 80px;
 }
-div#btn--order button.commander {
+main div#btn--order button.commander {
   border-radius: 30px;
   font-size: 1rem;
   width: 220px;
@@ -6814,32 +6756,30 @@ div#btn--order button.commander {
   border: 0px solid #FF79DA;
   text-align: center;
 }
-
-/* Footer */
-footer {
+main footer {
   background-color: #383838;
   padding: 20px 0px 35px 20px;
 }
-footer h4 {
+main footer h4 {
   font-size: 1rem;
   margin: 0px;
   padding-bottom: 10px;
   font-family: "Shrikhand", sans-serif;
   color: white;
 }
-footer nav {
+main footer nav {
   display: flex;
   flex-direction: column;
 }
-footer a {
+main footer a {
   text-decoration: none;
   color: white;
   padding: 5px 0px 5px;
 }
-footer a:hover {
+main footer a:hover {
   color: #9356DC;
 }
-footer i {
+main footer i {
   padding-right: 5px;
   width: 20px;
 }
