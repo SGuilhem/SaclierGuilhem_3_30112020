@@ -6418,29 +6418,30 @@ main section#restaurants .pointer i {
   bottom: 50px;
 }
 
-h4 {
+footer {
+  background-color: #383838;
+  padding: 20px 0px 35px 20px;
+}
+footer h4 {
   font-size: 1rem;
   margin: 0px;
   padding-bottom: 10px;
   font-family: "Shrikhand", sans-serif;
   color: white;
 }
-
-nav {
+footer nav {
   display: flex;
   flex-direction: column;
 }
-
-a {
+footer a {
   text-decoration: none;
   color: white;
   padding: 5px 0px 5px;
 }
-a:hover {
+footer a:hover {
   color: #9356DC;
 }
-
-i {
+footer i {
   padding-right: 5px;
   width: 20px;
 }
