@@ -6228,9 +6228,6 @@ readers do not read off random characters that represent icons */
     justify-content: center;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   }
-  main section#execution li.active {
-    background-color: rgba(147, 86, 220, 0.1);
-  }
   main section#execution li.active i {
     color: #9356DC;
   }
@@ -6916,8 +6913,15 @@ readers do not read off random characters that represent icons */
     justify-content: center;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   }
+  main section#execution li.step1 {
+    margin-left: 15%;
+  }
+  main section#execution li.step2 {
+    margin-left: 40%;
+  }
   main section#execution li.active {
     background-color: rgba(147, 86, 220, 0.1);
+    margin-left: 65%;
   }
   main section#execution li.active i {
     color: #9356DC;
@@ -6926,14 +6930,13 @@ readers do not read off random characters that represent icons */
     font-size: 1.3rem;
     padding-bottom: 2px;
     color: gray;
-    margin-right: 25px;
+    margin-left: 25px;
   }
   main section#execution span.step {
     margin-left: 30px;
   }
   main section#execution span.num {
     display: flex;
-    position: absolute;
     left: 30px;
     font-size: 0.8rem;
     background-color: #9356DC;

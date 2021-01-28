@@ -156,9 +156,6 @@ main section#execution {
     justify-content: center;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
   }
-  li.active {
-    background-color: rgba($primary-color, 0.1);
-  }
   li.active i {
     color: $primary-color;
   }
@@ -814,8 +811,15 @@ footer {
       justify-content: center;
       box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
     }
+    li.step1 {
+      margin-left: 15%;
+    }
+    li.step2 {
+      margin-left: 40%;
+    }
     li.active {
       background-color: rgba($primary-color, 0.1);
+      margin-left: 65%
     }
     li.active i {
       color: $primary-color;
@@ -824,14 +828,13 @@ footer {
       font-size: 1.3rem;
       padding-bottom: 2px;
       color: gray;
-      margin-right: 25px;
+      margin-left: 25px;
     }
     span.step {
       margin-left: 30px;
     }
     span.num {
       display: flex;
-      position: absolute;
       left: 30px;
       font-size: 0.8rem;
       background-color: $primary-color;
