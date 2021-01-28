@@ -839,9 +839,10 @@ footer {
       flex-direction: column;
       position: relative;
       background-color: white;
-      width: 100%;
+      width: 60%;
       height: 100%;
-      margin-bottom: 15px;
+      margin: auto;
+      margin-bottom: 55px;
       border-radius: 25px;
       box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .1);
     }
@@ -889,7 +890,7 @@ footer {
       padding: 6px 15px 0px;
       position: relative;
       bottom: 50px;
-      left: 1300px;
+      left: 750px;
     }
     .like::after {
       font-family: "Font Awesome 5 Free";
