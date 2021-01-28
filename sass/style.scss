@@ -553,11 +553,11 @@ main {
         box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
     }
     &:focus .price {
-        transform: translateX(-40px);
+        transform: translateX(-50px);
         transition: all 0.25s linear;
     }
     &:focus .validate {
-        width: 50px;
+        width: 60px;
         height: 62px;
     }
     &:focus .validate span {
