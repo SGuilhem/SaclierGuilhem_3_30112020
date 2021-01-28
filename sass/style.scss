@@ -32,69 +32,28 @@ $num-radius: 100%;
 
 /* */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-family: 'Roboto', sans-serif;
-
-}
-
-.loader {
-  position: absolute;
-  left: 35%;
-  top: 25%;
-  border: 16px solid $tertiary-color;
-  border-top: 16px solid $primary-color;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 0.75s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-#page {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  animation: opacity 1000ms 1000ms both;
-}
-@keyframes opacity {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Header */
-
-header {
-  padding: 15px 0px 10px;
-  #logo {
-    display: flex;
-    width: auto;
-    justify-content: center;
-    img {
-      height: 30px;
-      padding-left: 25px;
-    }
+@media screen and (min-width:320px) and (max-width: 767px) {
+  main section#search--desktop {
+    display: none;
   }
-}
 
-/* Bloc form  -  Penser à clear le form quand actif */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-main section#search {
+  html {
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+main section#search--responsive {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   justify-content: center;
-  #search--responsive {
+  #form--responsive {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -105,9 +64,9 @@ main section#search {
   }
   .geolocate{
     display: flex;
-    border: 1px solid #F0F0F0;
+    border: 1px solid darken(#F0F0F0, 5%);
     font-size: 0.9rem;
-    background-color: #F0F0F0;
+    background-color: darken(#F0F0F0, 5%);
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -132,7 +91,7 @@ main section#search {
     outline: none;
     border: 3px solid $primary-color;
   }
-  button.explorer{
+  button.explorer--responsive{
     border-radius: $btn-radius;
     font-size: 1rem;
     width: 220px;
@@ -141,7 +100,7 @@ main section#search {
     background: linear-gradient(160deg, $secondary-color 10%, $primary-color);
     border: 0px solid $secondary-color;
   }
-  #explorer{
+  #explorer--responsive{
     width: auto;
     text-align: center;
     background-color: $gray;
@@ -165,13 +124,6 @@ main section#search {
       margin-left: auto;
       margin-right: auto;
     }
-  }
-}
-
-
-@media screen and (min-width:320px) and (max-width: 767px) {
-  main section#search div#explorer form#search--desktop {
-    display: none;
   }
 }
 
@@ -384,7 +336,6 @@ html {
 #page {
   width: 100%;
   height: 100%;
-  max-width: 100%;
 }
 
 /* Header */
@@ -505,134 +456,133 @@ main {
       }
     }
 
-  /* #course1 {
-      @include course;
-      animation: opacity 1000ms 1200ms both;
-    }
-    #course2 {
-      @include course;
-      animation: opacity 1000ms 1400ms both;
-    }
-    #course3 {
-      @include course;
-      animation: opacity 1000ms 1600ms both;
-    }
-    #course4 {
-      @include course;
-      animation: opacity 1000ms 1800ms both;
-    }
-    #course5 {
-      @include course;
-      animation: opacity 1000ms 2000ms both;
-    }
-    #course6 {
-      @include course;
-      animation: opacity 1000ms 2200ms both;
-    }
-    #course7 {
-      @include course;
-      animation: opacity 1000ms 2400ms both;
-    }
-    #course8 {
-      @include course;
-      animation: opacity 1000ms 2600ms both;
-    }
-    #course9 {
-      @include course;
-      animation: opacity 1000ms 2800ms both;
-    }
-    #course10 {
-      @include course;
-      animation: opacity 1000ms 3000ms both;
-    } */
-    @keyframes opacity {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-    &:focus {
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
-    }
-    &:focus .price {
-        transform: translateX(-50px);
-        transition: all 0.25s linear;
-    }
-    &:focus .validate {
-        width: 60px;
-        height: 62px;
-    }
-    &:focus .validate span {
-        opacity: 1;
-        transform: rotate(0) scale(1.4);
-    }
-    .content {
-      padding: 10px;
-      overflow: hidden;
-      h3 {
-        font-size: 1em;
-      }
-      p {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        font-size: 0.8em;
-        padding-top: 5px;
-      }
-    }
-    .price {
-        display: flex;
-        font-weight: bold;
-        align-self: flex-end;
-        padding: 10px;
-        position: absolute;
-        right: 30px;
-      }
-    .validate {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $tertiary-color;
-        width: 0;
-        transition: all .25s linear;
-          span {
-          opacity: 0;
-          transform: rotate(180deg) scale(.8);
-          transition: all .25s linear;
-      }
-      }
+    /* #course1 {
+    @include course;
+    animation: opacity 1000ms 1200ms both;
   }
-  /*
-  :focus > .price {
-    transform: translateX(-45px);
+  #course2 {
+  @include course;
+  animation: opacity 1000ms 1400ms both;
+}
+#course3 {
+@include course;
+animation: opacity 1000ms 1600ms both;
+}
+#course4 {
+@include course;
+animation: opacity 1000ms 1800ms both;
+}
+#course5 {
+@include course;
+animation: opacity 1000ms 2000ms both;
+}
+#course6 {
+@include course;
+animation: opacity 1000ms 2200ms both;
+}
+#course7 {
+@include course;
+animation: opacity 1000ms 2400ms both;
+}
+#course8 {
+@include course;
+animation: opacity 1000ms 2600ms both;
+}
+#course9 {
+@include course;
+animation: opacity 1000ms 2800ms both;
+}
+#course10 {
+@include course;
+animation: opacity 1000ms 3000ms both;
+} */
+@keyframes opacity {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+&:focus {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+}
+&:focus .price {
+  transform: translateX(-50px);
+  transition: all 0.25s linear;
+}
+&:focus .validate {
+  width: 60px;
+  height: 62px;
+}
+&:focus .validate span {
+  opacity: 1;
+  transform: rotate(0) scale(1.4);
+}
+.content {
+  padding: 10px;
+  overflow: hidden;
+  h3 {
+    font-size: 1em;
   }
-  .slidehover {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top:-77px;
-    left: 268px;
-    border-top-right-radius: $function-radius;
-    border-bottom-right-radius: $function-radius;
-    height: 62px;
-    width: 20%;
-    background-color: $tertiary-color;
-    opacity: 1;
+  p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.8em;
+    padding-top: 5px;
   }
-  :hover > .slidehover {
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-direction: alternate;
+}
+.price {
+  display: flex;
+  font-weight: bold;
+  align-self: flex-end;
+  padding: 10px;
+  position: absolute;
+  right: 30px;
+}
+.validate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $tertiary-color;
+  width: 0;
+  transition: all .25s linear;
+  span {
+    opacity: 0;
+    transform: rotate(180deg) scale(.8);
+    transition: all .25s linear;
   }
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
+}
+}
+/*
+:focus > .price {
+transform: translateX(-45px);
+}
+.slidehover {
+display: flex;
+flex-direction: row;
+position: relative;
+top:-77px;
+left: 268px;
+border-top-right-radius: $function-radius;
+border-bottom-right-radius: $function-radius;
+height: 62px;
+width: 20%;
+background-color: $tertiary-color;
+opacity: 1;
+}
+:hover > .slidehover {
+animation-duration: 1s;
+animation-name: slidein;
+animation-direction: alternate;
+}
+@keyframes slidein {
+from {
+margin-left: 100%;
+width: 300%;
+}
+to {
+margin-left: 0%;
+width: 100%;
+}
+}
 } */
 
 div#btn--order {
@@ -682,5 +632,215 @@ footer {
     padding-right: 5px;
     width: 20px;
   }
+}
+}
+}
+
+@media (min-width: 768px) {
+  main section#search--responsive {
+    display: none;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+  .loader {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    border: 16px solid $tertiary-color;
+    border-top: 16px solid $primary-color;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 0.75s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  #page {
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: auto;
+    overflow-x: hidden;
+    animation: opacity 1000ms 1000ms both;
+  }
+  @keyframes opacity {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* Header */
+
+  header {
+    padding: 15px 0px 10px;
+    #logo {
+      display: flex;
+      width: auto;
+      justify-content: center;
+      img {
+        height: 30px;
+        padding-left: 25px;
+      }
+    }
+  }
+
+  /* Bloc form  -  Penser à clear le form quand actif */
+
+  main section#search--desktop {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    justify-content: center;
+    #explorer--desktop{
+      width: auto;
+      text-align: center;
+      background-color: $gray;
+      height: 280px;
+      h1 {
+        display: flex;
+        font-size: 1.4rem;
+        width: 250px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      p {
+        display: flex;
+        font-size: 1.1rem;
+        width: 350px;
+        background-color: $gray;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      div#search--desktop--block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      form#search--desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: darken(#F0F0F0, 5%);
+        width: 250px;
+        height: 45px;
+        border: 0px solid #F0F0F0;
+        box-shadow: inset 0px 4px 6px #888;
+      }
+      .geolocate{
+        display: flex;
+        border: 1px solid darken(#F0F0F0, 5%);
+        font-size: 0.9rem;
+        background-color: darken(#F0F0F0, 5%);
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      & input {
+        display: flex;
+        border: 1px solid darken(#F0F0F0, 5%);
+        background-color: darken(#F0F0F0, 5%);
+        color: black;
+        font-weight: normal;
+        font-size: 0.8rem;
+        width: 140px;
+        height: 30px;
+        align-self: center;
+        margin-top: 5px;
+      }
+      & ::placeholder {
+        display: flex;
+        color: black;
+        font-weight: normal;
+        font-size: 1rem;
+      }
+      & :focus {
+        outline: none;
+        border: 3px solid $primary-color;
+      }
+      button.explorer--desktop{
+        border-radius: $btn-radius;
+        font-size: 1rem;
+        margin-left: 15px;
+        width: 220px;
+        height: 45px;
+        color: white;
+        background: linear-gradient(160deg, $secondary-color 10%, $primary-color);
+        border: 0px solid $secondary-color;
+      }
+    }
+  }
+}
+  main section#execution {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    h2 {
+      padding: 0px 0px 20px 15px;
+    }
+    div#execution--steps nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 40px;
+    }
+    li {
+      display: flex;
+      list-style: none;
+      border-radius: $function-radius;
+      font-size: 1rem;
+      width: 300px;
+      height: 70px;
+      color: black;
+      background: #F2F2F2;
+      border: 0px solid #F2F2F2;
+      margin: 10px 0px 15px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
+    }
+    li.active {
+      background-color: rgba($primary-color, 0.1);
+    }
+    li.active i {
+      color: $primary-color;
+    }
+    i{
+      font-size: 1.3rem;
+      padding-bottom: 2px;
+      color: gray;
+      margin-right: 25px;
+    }
+    span.step {
+      margin-left: 30px;
+    }
+    span.num {
+      display: flex;
+      position: absolute;
+      left: 30px;
+      font-size: 0.8rem;
+      background-color: $primary-color;
+      color: white;
+      border-radius: $num-radius;
+      width: 25px;
+      height: 25px;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
