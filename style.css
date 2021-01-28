@@ -6540,7 +6540,7 @@ readers do not read off random characters that represent icons */
     width: 40px;
     height: 1px;
     bottom: 0;
-    left: 0%;
+    left: 0;
     border-bottom: 3px solid #99E2D0;
   }
   main a.restaurant--courses {
@@ -6857,6 +6857,11 @@ readers do not read off random characters that represent icons */
     justify-content: space-between;
     padding-left: 40px;
   }
+  main section#execution ul {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px 0px 50px;
+  }
   main section#execution li {
     display: flex;
     list-style: none;
@@ -6867,21 +6872,14 @@ readers do not read off random characters that represent icons */
     color: black;
     background: #F2F2F2;
     border: 0px solid #F2F2F2;
-    margin: 10px 0px 15px;
+    margin: 10px 50px 15px 50px;
     text-align: center;
     align-items: center;
     justify-content: center;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   }
-  main section#execution li.step1 {
-    margin-left: 15%;
-  }
-  main section#execution li.step2 {
-    margin-left: 40%;
-  }
   main section#execution li.active {
     background-color: rgba(147, 86, 220, 0.1);
-    margin-left: 65%;
   }
   main section#execution li.active i {
     color: #9356DC;
@@ -6991,7 +6989,7 @@ readers do not read off random characters that represent icons */
     padding: 6px 15px 0px;
     position: relative;
     bottom: 50px;
-    left: 270px;
+    left: 1300px;
   }
   main section#restaurants .like::after {
     font-family: "Font Awesome 5 Free";
@@ -7093,39 +7091,6 @@ readers do not read off random characters that represent icons */
     flex-direction: column;
     width: auto;
     background-color: white;
-    /*
-    :focus > .price {
-    transform: translateX(-45px);
-    }
-    .slidehover {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top:-77px;
-    left: 268px;
-    border-top-right-radius: $function-radius;
-    border-bottom-right-radius: $function-radius;
-    height: 62px;
-    width: 20%;
-    background-color: $tertiary-color;
-    opacity: 1;
-    }
-    :hover > .slidehover {
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-direction: alternate;
-    }
-    @keyframes slidein {
-    from {
-    margin-left: 100%;
-    width: 300%;
-    }
-    to {
-    margin-left: 0%;
-    width: 100%;
-    }
-    }
-    } */
     /* Footer */
   }
   main div#backgroundimg img {
