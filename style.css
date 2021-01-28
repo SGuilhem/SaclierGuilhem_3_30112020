@@ -6556,46 +6556,6 @@ readers do not read off random characters that represent icons */
     overflow: hidden;
     transition: all 0.25s linear;
     outline: none;
-    /* #course1 {
-        @include course;
-        animation: opacity 1000ms 1200ms both;
-      }
-      #course2 {
-      @include course;
-      animation: opacity 1000ms 1400ms both;
-    }
-    #course3 {
-    @include course;
-    animation: opacity 1000ms 1600ms both;
-    }
-    #course4 {
-    @include course;
-    animation: opacity 1000ms 1800ms both;
-    }
-    #course5 {
-    @include course;
-    animation: opacity 1000ms 2000ms both;
-    }
-    #course6 {
-    @include course;
-    animation: opacity 1000ms 2200ms both;
-    }
-    #course7 {
-    @include course;
-    animation: opacity 1000ms 2400ms both;
-    }
-    #course8 {
-    @include course;
-    animation: opacity 1000ms 2600ms both;
-    }
-    #course9 {
-    @include course;
-    animation: opacity 1000ms 2800ms both;
-    }
-    #course10 {
-    @include course;
-    animation: opacity 1000ms 3000ms both;
-    } */
   }
   main a.restaurant--courses.course--1 {
     animation: opacity 1000ms 1200ms both;
@@ -7047,6 +7007,8 @@ readers do not read off random characters that represent icons */
   main section#restaurants .visually-hidden {
     position: absolute;
     opacity: 0;
+    width: 20px;
+    height: 20px;
   }
   main section#restaurants div.pointed i {
     color: #9356DC;
@@ -7210,6 +7172,8 @@ readers do not read off random characters that represent icons */
   main section#menu #menu--restauranttitle .visually-hidden {
     position: absolute;
     opacity: 0;
+    width: 20px;
+    height: 20px;
   }
   main section#menu article h2 {
     display: inline-block;
@@ -7250,46 +7214,6 @@ readers do not read off random characters that represent icons */
     overflow: hidden;
     transition: all 0.25s linear;
     outline: none;
-    /* #course1 {
-        @include course;
-        animation: opacity 1000ms 1200ms both;
-      }
-      #course2 {
-      @include course;
-      animation: opacity 1000ms 1400ms both;
-    }
-    #course3 {
-    @include course;
-    animation: opacity 1000ms 1600ms both;
-    }
-    #course4 {
-    @include course;
-    animation: opacity 1000ms 1800ms both;
-    }
-    #course5 {
-    @include course;
-    animation: opacity 1000ms 2000ms both;
-    }
-    #course6 {
-    @include course;
-    animation: opacity 1000ms 2200ms both;
-    }
-    #course7 {
-    @include course;
-    animation: opacity 1000ms 2400ms both;
-    }
-    #course8 {
-    @include course;
-    animation: opacity 1000ms 2600ms both;
-    }
-    #course9 {
-    @include course;
-    animation: opacity 1000ms 2800ms both;
-    }
-    #course10 {
-    @include course;
-    animation: opacity 1000ms 3000ms both;
-    } */
   }
   main a.restaurant--courses.course--1 {
     animation: opacity 1000ms 1200ms both;
@@ -7334,7 +7258,8 @@ readers do not read off random characters that represent icons */
   }
   main a.restaurant--courses:focus .price {
     transform: translateX(-50px);
-    transition: all 0.25s linear;
+    transition: all 0.25s;
+    transition-duration: 0.25s;
   }
   main a.restaurant--courses:focus .validate {
     width: 60px;
