@@ -783,10 +783,9 @@ $num-radius: 100%;
       padding: 50px 15px 20px;
     }
     #restaurants--list {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
       height: auto;
       padding-bottom: 55px;
     }
@@ -1057,7 +1056,7 @@ $num-radius: 100%;
       }
       &:focus .price {
         transform: translateX(-50px);
-        transition: all 0.25s;
+        transition: all 0.25s linear;
       }
       &:focus .validate {
         width: 60px;
