@@ -6335,9 +6335,9 @@ readers do not read off random characters that represent icons */
   }
   main section#restaurants .restaurant--likebtn {
     padding: 6px 15px 0px;
-    position: relative;
-    bottom: 50px;
-    left: 270px;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
   }
   main section#restaurants .like::after {
     font-family: "Font Awesome 5 Free";
@@ -6510,7 +6510,7 @@ readers do not read off random characters that represent icons */
     left: 0;
     border-bottom: 3px solid #99E2D0;
   }
-  main a.restaurant--courses {
+  main div.restaurant--courses {
     height: 62px;
     display: flex;
     text-decoration: none;
@@ -6524,34 +6524,34 @@ readers do not read off random characters that represent icons */
     transition: all 0.25s linear;
     outline: none;
   }
-  main a.restaurant--courses.course--1 {
+  main div.restaurant--courses.course--1 {
     animation: opacity 1000ms 1200ms both;
   }
-  main a.restaurant--courses.course--2 {
+  main div.restaurant--courses.course--2 {
     animation: opacity 1000ms 1400ms both;
   }
-  main a.restaurant--courses.course--3 {
+  main div.restaurant--courses.course--3 {
     animation: opacity 1000ms 1600ms both;
   }
-  main a.restaurant--courses.course--4 {
+  main div.restaurant--courses.course--4 {
     animation: opacity 1000ms 1800ms both;
   }
-  main a.restaurant--courses.course--5 {
+  main div.restaurant--courses.course--5 {
     animation: opacity 1000ms 2000ms both;
   }
-  main a.restaurant--courses.course--6 {
+  main div.restaurant--courses.course--6 {
     animation: opacity 1000ms 2200ms both;
   }
-  main a.restaurant--courses.course--7 {
+  main div.restaurant--courses.course--7 {
     animation: opacity 1000ms 2400ms both;
   }
-  main a.restaurant--courses.course--8 {
+  main div.restaurant--courses.course--8 {
     animation: opacity 1000ms 2600ms both;
   }
-  main a.restaurant--courses.course--9 {
+  main div.restaurant--courses.course--9 {
     animation: opacity 1000ms 2800ms both;
   }
-  main a.restaurant--courses.course--10 {
+  main div.restaurant--courses.course--10 {
     animation: opacity 1000ms 3000ms both;
   }
   @keyframes opacity {
@@ -6562,36 +6562,36 @@ readers do not read off random characters that represent icons */
       opacity: 1;
     }
   }
-  main a.restaurant--courses:focus {
+  main div.restaurant--courses:focus {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   }
-  main a.restaurant--courses:focus .price {
+  main div.restaurant--courses:focus .price {
     transform: translateX(-50px);
     transition: all 0.25s linear;
   }
-  main a.restaurant--courses:focus .validate {
+  main div.restaurant--courses:focus .validate {
     width: 60px;
     height: 62px;
   }
-  main a.restaurant--courses:focus .validate span {
+  main div.restaurant--courses:focus .validate span {
     opacity: 1;
     transform: rotate(0) scale(1.4);
   }
-  main a.restaurant--courses .content {
+  main div.restaurant--courses .content {
     padding: 10px;
     overflow: hidden;
   }
-  main a.restaurant--courses .content h3 {
+  main div.restaurant--courses .content h3 {
     font-size: 1em;
   }
-  main a.restaurant--courses .content p {
+  main div.restaurant--courses .content p {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     font-size: 0.8em;
     padding-top: 5px;
   }
-  main a.restaurant--courses .price {
+  main div.restaurant--courses .price {
     display: flex;
     font-weight: bold;
     align-self: flex-end;
@@ -6599,7 +6599,7 @@ readers do not read off random characters that represent icons */
     position: absolute;
     right: 30px;
   }
-  main a.restaurant--courses .validate {
+  main div.restaurant--courses .validate {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6607,7 +6607,7 @@ readers do not read off random characters that represent icons */
     width: 0;
     transition: all 0.25s linear;
   }
-  main a.restaurant--courses .validate span {
+  main div.restaurant--courses .validate span {
     opacity: 0;
     transform: rotate(180deg) scale(0.8);
     transition: all 0.25s linear;
@@ -6955,9 +6955,9 @@ readers do not read off random characters that represent icons */
   }
   main section#restaurants .restaurant--likebtn {
     padding: 6px 15px 0px;
-    position: relative;
-    bottom: 50px;
-    left: 750px;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
   }
   main section#restaurants .like::after {
     font-family: "Font Awesome 5 Free";
@@ -7129,8 +7129,9 @@ readers do not read off random characters that represent icons */
     left: 0%;
     border-bottom: 3px solid #99E2D0;
   }
-  main a.restaurant--courses {
+  main div.restaurant--courses {
     height: 62px;
+    position: relative;
     display: flex;
     text-decoration: none;
     justify-content: space-between;
@@ -7143,34 +7144,34 @@ readers do not read off random characters that represent icons */
     transition: all 0.25s linear;
     outline: none;
   }
-  main a.restaurant--courses.course--1 {
+  main div.restaurant--courses.course--1 {
     animation: opacity 1000ms 1200ms both;
   }
-  main a.restaurant--courses.course--2 {
+  main div.restaurant--courses.course--2 {
     animation: opacity 1000ms 1400ms both;
   }
-  main a.restaurant--courses.course--3 {
+  main div.restaurant--courses.course--3 {
     animation: opacity 1000ms 1600ms both;
   }
-  main a.restaurant--courses.course--4 {
+  main div.restaurant--courses.course--4 {
     animation: opacity 1000ms 1800ms both;
   }
-  main a.restaurant--courses.course--5 {
+  main div.restaurant--courses.course--5 {
     animation: opacity 1000ms 2000ms both;
   }
-  main a.restaurant--courses.course--6 {
+  main div.restaurant--courses.course--6 {
     animation: opacity 1000ms 2200ms both;
   }
-  main a.restaurant--courses.course--7 {
+  main div.restaurant--courses.course--7 {
     animation: opacity 1000ms 2400ms both;
   }
-  main a.restaurant--courses.course--8 {
+  main div.restaurant--courses.course--8 {
     animation: opacity 1000ms 2600ms both;
   }
-  main a.restaurant--courses.course--9 {
+  main div.restaurant--courses.course--9 {
     animation: opacity 1000ms 2800ms both;
   }
-  main a.restaurant--courses.course--10 {
+  main div.restaurant--courses.course--10 {
     animation: opacity 1000ms 3000ms both;
   }
   @keyframes opacity {
@@ -7181,36 +7182,36 @@ readers do not read off random characters that represent icons */
       opacity: 1;
     }
   }
-  main a.restaurant--courses:focus {
+  main div.restaurant--courses:focus {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   }
-  main a.restaurant--courses:focus .price {
+  main div.restaurant--courses:focus .price {
     transform: translateX(-50px);
     transition: all 0.25s;
   }
-  main a.restaurant--courses:focus .validate {
+  main div.restaurant--courses:focus .validate {
     width: 60px;
     height: 62px;
   }
-  main a.restaurant--courses:focus .validate span {
+  main div.restaurant--courses:focus .validate span {
     opacity: 1;
     transform: rotate(0) scale(1.4);
   }
-  main a.restaurant--courses .content {
+  main div.restaurant--courses .content {
     padding: 10px;
     overflow: hidden;
   }
-  main a.restaurant--courses .content h3 {
+  main div.restaurant--courses .content h3 {
     font-size: 1em;
   }
-  main a.restaurant--courses .content p {
+  main div.restaurant--courses .content p {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     font-size: 0.8em;
     padding-top: 5px;
   }
-  main a.restaurant--courses .price {
+  main div.restaurant--courses .price {
     display: flex;
     font-weight: bold;
     align-self: flex-end;
@@ -7219,7 +7220,7 @@ readers do not read off random characters that represent icons */
     right: 30px;
     transition: all 0.25s;
   }
-  main a.restaurant--courses .validate {
+  main div.restaurant--courses .validate {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7227,7 +7228,7 @@ readers do not read off random characters that represent icons */
     width: 0;
     transition: all 0.25s linear;
   }
-  main a.restaurant--courses .validate span {
+  main div.restaurant--courses .validate span {
     opacity: 0;
     transform: rotate(180deg) scale(0.8);
     transition: all 0.25s linear;

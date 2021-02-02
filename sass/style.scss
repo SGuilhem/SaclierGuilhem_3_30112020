@@ -264,9 +264,9 @@ $num-radius: 100%;
 
     .restaurant--likebtn{
       padding: 6px 15px 0px;
-      position: relative;
-      bottom: 50px;
-      left: 270px;
+      position: absolute;
+      bottom: 25px;
+      right: 10px;
     }
     .like::after {
       font-family: "Font Awesome 5 Free";
@@ -443,7 +443,7 @@ $num-radius: 100%;
         border-bottom: 3px solid $tertiary-color;
       }
     }
-    a.restaurant--courses {
+    div.restaurant--courses {
       height: 62px;
       @include course;
 
@@ -510,55 +510,55 @@ $num-radius: 100%;
       }
     }
 
-div#btn--order {
-  display: flex;
-  justify-content: center;
-  background-color: $gray;
-  padding-bottom: 80px;
-  button.commander{
-    border-radius: $btn-radius;
-    font-size: 1rem;
-    width: 220px;
-    height: 45px;
-    color: white;
-    background: linear-gradient($secondary-color, 55%, $primary-color);
-    border: 0px solid $secondary-color;
-    text-align: center;
-  }
-}
+    div#btn--order {
+      display: flex;
+      justify-content: center;
+      background-color: $gray;
+      padding-bottom: 80px;
+      button.commander{
+        border-radius: $btn-radius;
+        font-size: 1rem;
+        width: 220px;
+        height: 45px;
+        color: white;
+        background: linear-gradient($secondary-color, 55%, $primary-color);
+        border: 0px solid $secondary-color;
+        text-align: center;
+      }
+    }
 
 
-/* Footer */
+    /* Footer */
 
 
-footer {
-  background-color: #383838;
-  padding: 20px 0px 35px 20px;
-  h4 {
-    font-size: 1rem;
-    margin: 0px;
-    padding-bottom: 10px;
-    font-family: 'Shrikhand', sans-serif;
-    color: white;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 0px 5px;
-    &:hover {
-      color: $primary-color;
+    footer {
+      background-color: #383838;
+      padding: 20px 0px 35px 20px;
+      h4 {
+        font-size: 1rem;
+        margin: 0px;
+        padding-bottom: 10px;
+        font-family: 'Shrikhand', sans-serif;
+        color: white;
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 0px 5px;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      i {
+        padding-right: 5px;
+        width: 20px;
+      }
     }
   }
-  i {
-    padding-right: 5px;
-    width: 20px;
-  }
-}
-}
 }
 
 @media (min-width: 768px) {
@@ -855,9 +855,9 @@ footer {
 
     .restaurant--likebtn{
       padding: 6px 15px 0px;
-      position: relative;
-      bottom: 50px;
-      left: 750px;
+      position: absolute;
+      bottom: 10px;
+      right: 0px;
     }
     .like::after {
       font-family: "Font Awesome 5 Free";
@@ -1033,8 +1033,9 @@ footer {
         border-bottom: 3px solid $tertiary-color;
       }
     }
-    a.restaurant--courses {
+    div.restaurant--courses {
       height: 62px;
+      position: relative;
       @include course;
 
       @for $i from 1 through 10 {
