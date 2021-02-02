@@ -6364,34 +6364,6 @@ readers do not read off random characters that represent icons */
     bottom: 50px;
   }
 
-  footer {
-    background-color: #383838;
-    padding: 20px 0px 35px 20px;
-  }
-  footer h4 {
-    font-size: 1rem;
-    margin: 0px;
-    padding-bottom: 10px;
-    font-family: "Shrikhand", sans-serif;
-    color: white;
-  }
-  footer nav {
-    display: flex;
-    flex-direction: column;
-  }
-  footer a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 0px 5px;
-  }
-  footer a:hover {
-    color: #9356DC;
-  }
-  footer i {
-    padding-right: 5px;
-    width: 20px;
-  }
-
   /* Restaurants */
   html {
     font-family: "Roboto", sans-serif;
@@ -6441,7 +6413,7 @@ readers do not read off random characters that represent icons */
   }
   main div#backgroundimg img {
     bottom: 200px;
-    width: 99%;
+    width: 100%;
     padding: 1px 1px 0px 1px;
   }
   main div#menuandfooter {
@@ -6959,8 +6931,8 @@ readers do not read off random characters that represent icons */
   main section#restaurants .restaurant--likebtn {
     padding: 6px 15px 0px;
     position: absolute;
-    bottom: 10px;
-    right: 0px;
+    bottom: 25px;
+    right: 10px;
   }
   main section#restaurants .like::after {
     font-family: "Font Awesome 5 Free";
@@ -6987,34 +6959,6 @@ readers do not read off random characters that represent icons */
     position: relative;
     left: 310px;
     bottom: 50px;
-  }
-
-  footer {
-    background-color: #383838;
-    padding: 20px 0px 35px 20px;
-  }
-  footer h4 {
-    font-size: 1rem;
-    margin: 0px;
-    padding-bottom: 10px;
-    font-family: "Shrikhand", sans-serif;
-    color: white;
-  }
-  footer nav {
-    display: flex;
-    flex-direction: column;
-  }
-  footer a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 0px 5px;
-  }
-  footer a:hover {
-    color: #9356DC;
-  }
-  footer i {
-    padding-right: 5px;
-    width: 20px;
   }
 
   /* Restaurants */
@@ -7061,7 +7005,7 @@ readers do not read off random characters that represent icons */
   }
   main div#backgroundimg img {
     bottom: 200px;
-    width: 99%;
+    width: 100%;
     padding: 1px 1px 0px 1px;
   }
   main div#menuandfooter {
@@ -7110,6 +7054,7 @@ readers do not read off random characters that represent icons */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 0px 30px;
+    column-gap: 2rem;
   }
   main section#menu #menu--grid article h2 {
     display: inline-block;
@@ -7262,18 +7207,21 @@ readers do not read off random characters that represent icons */
   }
   main footer {
     background-color: #383838;
-    padding: 20px 0px 35px 20px;
+    padding: 20px 0px 50px 70px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
   }
   main footer h4 {
-    font-size: 1rem;
+    font-size: 1.8rem;
     margin: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     font-family: "Shrikhand", sans-serif;
     color: white;
   }
   main footer nav {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
   main footer a {
     text-decoration: none;
