@@ -6598,6 +6598,7 @@ readers do not read off random characters that represent icons */
     padding: 10px;
     position: absolute;
     right: 30px;
+    transition: all 0.25s;
   }
   main div.restaurant--courses .validate {
     display: flex;
@@ -6611,6 +6612,9 @@ readers do not read off random characters that represent icons */
     opacity: 0;
     transform: rotate(180deg) scale(0.8);
     transition: all 0.25s linear;
+  }
+  main div.restaurant--courses .validate span i {
+    color: white;
   }
   main div#btn--order {
     display: flex;
@@ -7232,6 +7236,9 @@ readers do not read off random characters that represent icons */
     opacity: 0;
     transform: rotate(180deg) scale(0.8);
     transition: all 0.25s linear;
+  }
+  main div.restaurant--courses .validate span i {
+    color: white;
   }
   main div#btn--order {
     display: flex;

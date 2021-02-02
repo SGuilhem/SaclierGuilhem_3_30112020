@@ -494,6 +494,7 @@ $num-radius: 100%;
         padding: 10px;
         position: absolute;
         right: 30px;
+        transition: all 0.25s;
       }
       .validate {
         display: flex;
@@ -506,6 +507,9 @@ $num-radius: 100%;
           opacity: 0;
           transform: rotate(180deg) scale(.8);
           transition: all .25s linear;
+          i {
+            color: white;
+          }
         }
       }
     }
@@ -1097,6 +1101,9 @@ $num-radius: 100%;
           opacity: 0;
           transform: rotate(180deg) scale(.8);
           transition: all .25s linear;
+          i {
+            color: white;
+          }
         }
       }
     }
