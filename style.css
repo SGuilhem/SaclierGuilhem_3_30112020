@@ -5,6 +5,7 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 .fa,
 .fas,
 .far,
@@ -6267,7 +6268,7 @@ readers do not read off random characters that represent icons */
   }
 
   main section#execution h2 {
-    padding: 0px 0px 20px 15px;
+    padding: 50px 0px 20px 15px;
   }
   main section#execution div#execution--steps nav {
     display: flex;
@@ -6388,6 +6389,7 @@ readers do not read off random characters that represent icons */
   }
   main section#restaurants h3 {
     font-size: 1.1rem;
+    font-weight: 700;
     margin: 15px 0px 5px;
     width: 200px;
   }

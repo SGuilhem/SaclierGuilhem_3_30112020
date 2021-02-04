@@ -4,6 +4,7 @@ $fa-font-path: "webfonts";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 /* Variables */
 
@@ -192,7 +193,7 @@ $num-radius: 100%;
 
   main section#execution {
     h2 {
-      padding: 0px 0px 20px 15px;
+      padding: 50px 0px 20px 15px;
     }
     div#execution--steps nav {
       display: flex;
@@ -313,6 +314,7 @@ $num-radius: 100%;
     }
     h3 {
       font-size: 1.1rem;
+      font-weight: 700;
       margin: 15px 0px 5px;
       width: 200px;
     }
