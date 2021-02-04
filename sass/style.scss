@@ -50,7 +50,7 @@ $num-radius: 100%;
 
   .loader {
     position: absolute;
-    left: 50%;
+    left: 35%;
     top: 10%;
     border: 16px solid $tertiary-color;
     border-top: 16px solid $primary-color;
@@ -65,11 +65,59 @@ $num-radius: 100%;
     100% { transform: rotate(360deg); }
   }
 
-  main section#search--responsive {
+  #page {
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: auto;
+    overflow-x: hidden;
+    animation: opacity 1000ms 1000ms both;
+  }
+  @keyframes opacity {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* Header */
+
+  header {
     display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    justify-content: center;
+    flex-direction: row;
+    padding: 15px 0px 10px;
+    button {
+      position: absolute;
+      top: 20px;
+      border: none;
+      background: none;
+      font-size: 1.3rem;
+      padding-left: 20px;
+      color: black;
+    }
+    a {
+      color: black;
+    }
+    #logo {
+      display: flex;
+      width: auto;
+      justify-content: center;
+      padding-right: 40px;
+      margin: auto;
+      img {
+        height: 30px;
+      }
+    }
+  }
+
+/* */
+ main {
+   display: flex;
+   flex-direction: column;
+   border-radius: 15px;
+   justify-content: center;
+ }
+/* Main Index */
+
+  main section#search--responsive {
     #form--responsive {
       display: flex;
       flex-direction: row;
@@ -145,9 +193,6 @@ $num-radius: 100%;
   }
 
   main section#execution {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
     h2 {
       padding: 0px 0px 20px 15px;
     }
@@ -311,57 +356,9 @@ $num-radius: 100%;
     }
   }
 
-
-  /* Restaurants */
-
-
-  html {
-    font-family: 'Roboto', sans-serif;
-
-  }
-
-  #page {
-    width: 100%;
-    height: 100%;
-  }
-
-  /* Header */
-
-  header {
-    display: flex;
-    flex-direction: row;
-    padding: 15px 0px 10px;
-    button {
-      position: absolute;
-      top: 20px;
-      border: none;
-      background: none;
-      font-size: 1.3rem;
-      padding-left: 20px;
-      color: black;
-    }
-    a {
-      color: black;
-    }
-    #logo {
-      display: flex;
-      width: auto;
-      justify-content: center;
-      padding-right: 40px;
-      margin: auto;
-      img {
-        height: 30px;
-      }
-    }
-  }
-
-  /* Main */
+  /* Main estaurants pages */
 
   main {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    background-color: white;
     div#backgroundimg {
       img {
         bottom:200px;
@@ -520,7 +517,7 @@ $num-radius: 100%;
         text-align: center;
       }
     }
-
+}
 
     /* Footer */
 
@@ -553,7 +550,6 @@ $num-radius: 100%;
       }
     }
   }
-}
 
 @media (min-width: 768px) {
   main section#search--responsive {
@@ -878,15 +874,6 @@ $num-radius: 100%;
       left: 310px;
       bottom: 50px;
     }
-  }
-
-
-  /* Restaurants */
-
-
-  html {
-    font-family: 'Roboto', sans-serif;
-
   }
 
   /* Header */
