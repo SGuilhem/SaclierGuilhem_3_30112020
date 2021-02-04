@@ -299,9 +299,8 @@ $num-radius: 100%;
       width: 100%;
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
-      object-position: 50% 50%;
+      object-position: 50% 60%;
       object-fit: cover;
-      padding: 1px 1px 0px 1px;
     }
     div.restaurant--description{
       display: flex;
@@ -359,7 +358,7 @@ $num-radius: 100%;
       img {
         bottom:200px;
         width: 100%;
-        padding: 1px 1px 0px 1px;}
+      }
     }
     div#menuandfooter {
       background-color: $gray;
@@ -808,9 +807,8 @@ $num-radius: 100%;
       width: 100%;
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
-      object-position: 50% 50%;
+      object-position: 50% 60%;
       object-fit: cover;
-      padding: 1px 1px 0px 1px;
     }
     div.restaurant--description{
       display: flex;
@@ -904,7 +902,6 @@ $num-radius: 100%;
       img {
         bottom:200px;
         width: 100%;
-        padding: 1px 1px 0px 1px;
         max-height: 650px;
         object-fit: cover;
         object-position: 100% 65%;
