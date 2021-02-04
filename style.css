@@ -6430,7 +6430,7 @@ readers do not read off random characters that represent icons */
   /* Main estaurants pages */
   main div#backgroundimg img {
     bottom: 200px;
-    width: 99%;
+    width: 100%;
     padding: 1px 1px 0px 1px;
   }
   main div#menuandfooter {
@@ -7011,6 +7011,9 @@ readers do not read off random characters that represent icons */
     bottom: 200px;
     width: 100%;
     padding: 1px 1px 0px 1px;
+    max-height: 650px;
+    object-fit: cover;
+    object-position: 100% 65%;
   }
   main div#menuandfooter {
     background-color: #F2F2F2;
