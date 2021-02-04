@@ -6119,6 +6119,26 @@ readers do not read off random characters that represent icons */
     font-family: "Roboto", sans-serif;
   }
 
+  .loader {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    border: 16px solid #99E2D0;
+    border-top: 16px solid #9356DC;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 0.75s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   main section#search--responsive {
     display: flex;
     flex-direction: column;
@@ -6413,7 +6433,7 @@ readers do not read off random characters that represent icons */
   }
   main div#backgroundimg img {
     bottom: 200px;
-    width: 100%;
+    width: 99%;
     padding: 1px 1px 0px 1px;
   }
   main div#menuandfooter {
@@ -7001,7 +7021,6 @@ readers do not read off random characters that represent icons */
     flex-direction: column;
     width: auto;
     background-color: white;
-    /* Footer */
   }
   main div#backgroundimg img {
     bottom: 200px;
@@ -7205,33 +7224,35 @@ readers do not read off random characters that represent icons */
     border: 0px solid #FF79DA;
     text-align: center;
   }
-  main footer {
+
+  /* Footer */
+  footer {
     background-color: #383838;
     padding: 20px 0px 50px 70px;
     display: inline-block;
     text-align: center;
     width: 100%;
   }
-  main footer h4 {
+  footer h4 {
     font-size: 1.8rem;
     margin: 0px;
     padding-bottom: 30px;
     font-family: "Shrikhand", sans-serif;
     color: white;
   }
-  main footer nav {
+  footer nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-  main footer a {
+  footer a {
     text-decoration: none;
     color: white;
     padding: 5px 0px 5px;
   }
-  main footer a:hover {
+  footer a:hover {
     color: #9356DC;
   }
-  main footer i {
+  footer i {
     padding-right: 5px;
     width: 20px;
   }
