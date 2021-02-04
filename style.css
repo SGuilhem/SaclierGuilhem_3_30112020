@@ -6426,7 +6426,7 @@ readers do not read off random characters that represent icons */
     bottom: 50px;
   }
 
-  /* Main estaurants pages */
+  /* Main restaurants pages */
   main div#backgroundimg img {
     bottom: 200px;
     width: 100%;
@@ -6572,7 +6572,6 @@ readers do not read off random characters that represent icons */
     font-size: 1em;
   }
   main div.restaurant--courses .content p {
-    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     font-size: 0.8em;
@@ -6702,16 +6701,45 @@ readers do not read off random characters that represent icons */
     }
   }
   /* Header */
+  header {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px 10px;
+  }
+  header button {
+    position: absolute;
+    top: 20px;
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    padding-left: 20px;
+    color: black;
+  }
+  header a {
+    color: black;
+  }
+  header #logo {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    padding-right: 40px;
+    margin: auto;
+  }
   header #logo img {
-    padding-left: 25px;
+    height: 30px;
   }
 
-  /* Bloc form  -  Penser à clear le form quand actif */
-  main section#search--desktop {
+  /* Main */
+  main {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     justify-content: center;
+  }
+
+  /* Main Index */
+  main section#search--desktop {
+    background-color: #F2F2F2;
   }
   main section#search--desktop #explorer--desktop {
     width: auto;
@@ -6795,17 +6823,12 @@ readers do not read off random characters that represent icons */
   }
 
   main section#execution {
-    display: flex;
-    flex-direction: column;
     margin-top: 30px;
   }
   main section#execution h2 {
     padding: 0px 0px 20px 15px;
   }
   main section#execution div#execution--steps nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding-left: 40px;
   }
   main section#execution ul {
@@ -6968,42 +6991,7 @@ readers do not read off random characters that represent icons */
     bottom: 50px;
   }
 
-  /* Header */
-  header {
-    display: flex;
-    flex-direction: row;
-    padding: 15px 0px 10px;
-  }
-  header button {
-    position: absolute;
-    top: 20px;
-    border: none;
-    background: none;
-    font-size: 1.3rem;
-    padding-left: 20px;
-    color: black;
-  }
-  header a {
-    color: black;
-  }
-  header #logo {
-    display: flex;
-    width: auto;
-    justify-content: center;
-    padding-right: 40px;
-    margin: auto;
-  }
-  header #logo img {
-    height: 30px;
-  }
-
-  /* Main */
-  main {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    background-color: white;
-  }
+  /* Main Restaurants pages  */
   main div#backgroundimg img {
     bottom: 200px;
     width: 100%;
@@ -7237,7 +7225,7 @@ readers do not read off random characters that represent icons */
     color: #9356DC;
   }
   footer i {
-    padding-right: 5px;
+    padding-right: 25px;
     width: 20px;
   }
 }
