@@ -6176,9 +6176,6 @@ readers do not read off random characters that represent icons */
   }
   header #logo {
     display: flex;
-    width: auto;
-    justify-content: center;
-    padding-right: 40px;
     margin: auto;
   }
   header #logo img {
@@ -6194,6 +6191,9 @@ readers do not read off random characters that represent icons */
   }
 
   /* Main Index */
+  main section#search--responsive {
+    background-color: #F2F2F2;
+  }
   main section#search--responsive #form--responsive {
     display: flex;
     flex-direction: row;
@@ -6244,7 +6244,6 @@ readers do not read off random characters that represent icons */
   main section#search--responsive #explorer--responsive {
     width: auto;
     text-align: center;
-    background-color: #F2F2F2;
     height: 280px;
   }
   main section#search--responsive #explorer--responsive h1 {
@@ -6652,7 +6651,7 @@ readers do not read off random characters that represent icons */
     width: 20px;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   main section#search--responsive {
     display: none;
   }
@@ -6705,16 +6704,7 @@ readers do not read off random characters that represent icons */
     }
   }
   /* Header */
-  header {
-    padding: 15px 0px 10px;
-  }
-  header #logo {
-    display: flex;
-    width: auto;
-    justify-content: center;
-  }
   header #logo img {
-    height: 30px;
     padding-left: 25px;
   }
 
