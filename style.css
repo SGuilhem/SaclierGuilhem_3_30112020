@@ -6122,7 +6122,10 @@ readers do not read off random characters that represent icons */
 
   .loader {
     position: absolute;
-    left: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     top: 10%;
     border: 16px solid #99E2D0;
     border-top: 16px solid #9356DC;
@@ -6211,6 +6214,7 @@ readers do not read off random characters that represent icons */
     background-color: #e3e3e3;
     margin-top: auto;
     margin-bottom: auto;
+    padding-right: 5px;
   }
   main section#search--responsive input {
     display: flex;
@@ -6218,10 +6222,14 @@ readers do not read off random characters that represent icons */
     background-color: #e3e3e3;
     color: black;
     font-weight: normal;
-    font-size: 0.8rem;
+    font-size: 1rem;
     width: 140px;
     height: 30px;
     align-self: center;
+    font-family: "Roboto", sans-serif;
+  }
+  main section#search--responsive input:focus::placeholder {
+    color: transparent;
   }
   main section#search--responsive ::placeholder {
     display: flex;
@@ -6231,7 +6239,6 @@ readers do not read off random characters that represent icons */
   }
   main section#search--responsive :focus {
     outline: none;
-    border: 3px solid #9356DC;
   }
   main section#search--responsive button.explorer--responsive {
     border-radius: 30px;
@@ -6667,7 +6674,10 @@ readers do not read off random characters that represent icons */
 
   .loader {
     position: absolute;
-    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     top: 10%;
     border: 16px solid #99E2D0;
     border-top: 16px solid #9356DC;
@@ -6790,6 +6800,7 @@ readers do not read off random characters that represent icons */
     background-color: #e3e3e3;
     margin-top: auto;
     margin-bottom: auto;
+    padding-right: 5px;
   }
   main section#search--desktop #explorer--desktop div#search--desktop--block input {
     display: flex;
@@ -6797,11 +6808,15 @@ readers do not read off random characters that represent icons */
     background-color: #e3e3e3;
     color: black;
     font-weight: normal;
-    font-size: 0.8rem;
+    font-size: 1rem;
     width: 140px;
     height: 30px;
     align-self: center;
     margin-top: 5px;
+    font-family: "Roboto", sans-serif;
+  }
+  main section#search--desktop #explorer--desktop div#search--desktop--block input:focus::placeholder {
+    color: transparent;
   }
   main section#search--desktop #explorer--desktop div#search--desktop--block ::placeholder {
     display: flex;
@@ -6811,7 +6826,6 @@ readers do not read off random characters that represent icons */
   }
   main section#search--desktop #explorer--desktop div#search--desktop--block :focus {
     outline: none;
-    border: 3px solid #9356DC;
   }
   main section#search--desktop #explorer--desktop div#search--desktop--block button.explorer--desktop {
     border-radius: 30px;

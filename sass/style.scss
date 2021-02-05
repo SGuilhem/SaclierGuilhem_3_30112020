@@ -50,7 +50,10 @@ $num-radius: 100%;
 
   .loader {
     position: absolute;
-    left: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     top: 10%;
     border: 16px solid $tertiary-color;
     border-top: 16px solid $primary-color;
@@ -105,16 +108,16 @@ $num-radius: 100%;
     }
   }
 
-/* */
+  /* */
 
- main {
-   display: flex;
-   flex-direction: column;
-   border-radius: 15px;
-   justify-content: center;
- }
+  main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    justify-content: center;
+  }
 
-/* Main Index */
+  /* Main Index */
 
   main section#search--responsive {
     background-color: $gray;
@@ -134,6 +137,7 @@ $num-radius: 100%;
       background-color: darken(#F0F0F0, 5%);
       margin-top: auto;
       margin-bottom: auto;
+      padding-right: 5px;
     }
     & input {
       display: flex;
@@ -141,11 +145,15 @@ $num-radius: 100%;
       background-color: darken(#F0F0F0, 5%);
       color: black;
       font-weight: normal;
-      font-size: 0.8rem;
+      font-size: 1rem;
       width: 140px;
       height: 30px;
       align-self: center;
+      font-family: 'Roboto', sans-serif;
     }
+    input:focus::placeholder {
+        color: transparent;
+      }
     & ::placeholder {
       display: flex;
       color: black;
@@ -154,7 +162,6 @@ $num-radius: 100%;
     }
     & :focus {
       outline: none;
-      border: 3px solid $primary-color;
     }
     button.explorer--responsive{
       border-radius: $btn-radius;
@@ -513,38 +520,38 @@ $num-radius: 100%;
         text-align: center;
       }
     }
-}
+  }
 
-    /* Footer */
+  /* Footer */
 
 
-    footer {
-      background-color: #383838;
-      padding: 20px 0px 35px 20px;
-      h4 {
-        font-size: 1rem;
-        margin: 0px;
-        padding-bottom: 10px;
-        font-family: 'Shrikhand', sans-serif;
-        color: white;
-      }
-      nav {
-        display: flex;
-        flex-direction: column;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-        padding: 5px 0px 5px;
-        &:hover {
-          color: $primary-color;
-        }
-      }
-      i {
-        padding-right: 5px;
-        width: 20px;
+  footer {
+    background-color: #383838;
+    padding: 20px 0px 35px 20px;
+    h4 {
+      font-size: 1rem;
+      margin: 0px;
+      padding-bottom: 10px;
+      font-family: 'Shrikhand', sans-serif;
+      color: white;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 5px 0px 5px;
+      &:hover {
+        color: $primary-color;
       }
     }
+    i {
+      padding-right: 5px;
+      width: 20px;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -564,7 +571,10 @@ $num-radius: 100%;
 
   .loader {
     position: absolute;
-    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     top: 10%;
     border: 16px solid $tertiary-color;
     border-top: 16px solid $primary-color;
@@ -680,6 +690,7 @@ $num-radius: 100%;
           background-color: darken(#F0F0F0, 5%);
           margin-top: auto;
           margin-bottom: auto;
+          padding-right: 5px;
         }
         & input {
           display: flex;
@@ -687,12 +698,16 @@ $num-radius: 100%;
           background-color: darken(#F0F0F0, 5%);
           color: black;
           font-weight: normal;
-          font-size: 0.8rem;
+          font-size: 1rem;
           width: 140px;
           height: 30px;
           align-self: center;
           margin-top: 5px;
+          font-family: 'Roboto', sans-serif;
         }
+        & input:focus::placeholder {
+        color: transparent;
+      }
         & ::placeholder {
           display: flex;
           color: black;
@@ -701,7 +716,6 @@ $num-radius: 100%;
         }
         & :focus {
           outline: none;
-          border: 3px solid $primary-color;
         }
         button.explorer--desktop{
           border-radius: $btn-radius;
