@@ -453,11 +453,11 @@ $num-radius: 100%;
         box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
       }
       &:focus .price {
-        transform: translateX(-50px);
+        transform: translateX(-5px);
         transition: all 0.25s linear;
       }
       &:focus .validate {
-        width: 60px;
+        width: 75px;
         height: 62px;
       }
       &:focus .validate span {
@@ -465,26 +465,34 @@ $num-radius: 100%;
         transform: rotate(0) scale(1.4);
       }
       .content {
+        display: flex;
+        flex-direction: column;
         padding: 10px;
         overflow: hidden;
+        width: 100%;
         h3 {
           font-size: 1em;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
         }
         p {
           white-space: nowrap;
           overflow: hidden;
           font-size: 0.8em;
           padding-top: 5px;
+          text-overflow: ellipsis;
         }
       }
       .price {
         display: flex;
         font-weight: bold;
-        align-self: flex-end;
-        padding: 10px;
-        position: absolute;
-        right: 30px;
+        padding: 10px 10px 0px 0px;
         transition: all 0.25s;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        align-items: center;
       }
       .validate {
         display: flex;
@@ -1015,8 +1023,12 @@ $num-radius: 100%;
         .content {
           padding: 10px;
           overflow: hidden;
+          width: 100%;
           h3 {
             font-size: 1em;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
           }
           p {
             text-overflow: ellipsis;
@@ -1029,10 +1041,8 @@ $num-radius: 100%;
         .price {
           display: flex;
           font-weight: bold;
-          align-self: flex-end;
-          padding: 10px;
-          position: absolute;
-          right: 30px;
+          align-self: center;
+          padding: 10px 10px 0px 0px;
           transition: all 0.25s;
         }
         .validate {

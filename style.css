@@ -6562,11 +6562,11 @@ readers do not read off random characters that represent icons */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   }
   main div.restaurant--courses:focus .price {
-    transform: translateX(-50px);
+    transform: translateX(-5px);
     transition: all 0.25s linear;
   }
   main div.restaurant--courses:focus .validate {
-    width: 60px;
+    width: 75px;
     height: 62px;
   }
   main div.restaurant--courses:focus .validate span {
@@ -6574,26 +6574,34 @@ readers do not read off random characters that represent icons */
     transform: rotate(0) scale(1.4);
   }
   main div.restaurant--courses .content {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     overflow: hidden;
+    width: 100%;
   }
   main div.restaurant--courses .content h3 {
     font-size: 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   main div.restaurant--courses .content p {
     white-space: nowrap;
     overflow: hidden;
     font-size: 0.8em;
     padding-top: 5px;
+    text-overflow: ellipsis;
   }
   main div.restaurant--courses .price {
     display: flex;
     font-weight: bold;
-    align-self: flex-end;
-    padding: 10px;
-    position: absolute;
-    right: 30px;
+    padding: 10px 10px 0px 0px;
     transition: all 0.25s;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    align-items: center;
   }
   main div.restaurant--courses .validate {
     display: flex;
@@ -7160,9 +7168,13 @@ readers do not read off random characters that represent icons */
   main section#menu div.restaurant--courses .content {
     padding: 10px;
     overflow: hidden;
+    width: 100%;
   }
   main section#menu div.restaurant--courses .content h3 {
     font-size: 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   main section#menu div.restaurant--courses .content p {
     text-overflow: ellipsis;
@@ -7174,10 +7186,8 @@ readers do not read off random characters that represent icons */
   main section#menu div.restaurant--courses .price {
     display: flex;
     font-weight: bold;
-    align-self: flex-end;
-    padding: 10px;
-    position: absolute;
-    right: 30px;
+    align-self: center;
+    padding: 10px 10px 0px 0px;
     transition: all 0.25s;
   }
   main section#menu div.restaurant--courses .validate {
