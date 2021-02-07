@@ -7154,11 +7154,11 @@ readers do not read off random characters that represent icons */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   }
   main section#menu div.restaurant--courses:focus .price {
-    transform: translateX(-50px);
+    transform: translateX(-5px);
     transition: all 0.25s linear;
   }
   main section#menu div.restaurant--courses:focus .validate {
-    width: 60px;
+    width: 75px;
     height: 62px;
   }
   main section#menu div.restaurant--courses:focus .validate span {
@@ -7166,6 +7166,8 @@ readers do not read off random characters that represent icons */
     transform: rotate(0) scale(1.4);
   }
   main section#menu div.restaurant--courses .content {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     overflow: hidden;
     width: 100%;
@@ -7186,9 +7188,12 @@ readers do not read off random characters that represent icons */
   main section#menu div.restaurant--courses .price {
     display: flex;
     font-weight: bold;
-    align-self: center;
     padding: 10px 10px 0px 0px;
     transition: all 0.25s;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    align-items: center;
   }
   main section#menu div.restaurant--courses .validate {
     display: flex;
