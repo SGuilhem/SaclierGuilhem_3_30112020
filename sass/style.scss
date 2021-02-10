@@ -29,6 +29,7 @@ $num-radius: 100%;
   overflow: hidden;
   transition: all .25s linear;
   outline: none;
+  min-width: 300px;
 }
 
 /* */
@@ -820,7 +821,7 @@ $num-radius: 100%;
       flex-direction: column;
       position: relative;
       background-color: white;
-      width: 60%;
+      width: 75%;
       height: 100%;
       margin: auto;
       margin-bottom: 55px;

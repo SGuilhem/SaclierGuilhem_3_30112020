@@ -6515,6 +6515,7 @@ main div.restaurant--courses {
   overflow: hidden;
   transition: all 0.25s linear;
   outline: none;
+  min-width: 300px;
 }
 main div.restaurant--courses.course--1 {
   animation: opacity 1000ms 1200ms both;
@@ -6925,7 +6926,7 @@ footer i {
     flex-direction: column;
     position: relative;
     background-color: white;
-    width: 60%;
+    width: 75%;
     height: 100%;
     margin: auto;
     margin-bottom: 55px;
@@ -7099,6 +7100,7 @@ footer i {
     overflow: hidden;
     transition: all 0.25s linear;
     outline: none;
+    min-width: 300px;
   }
   main section#menu div.restaurant--courses.course--1 {
     animation: opacity 1000ms 1200ms both;
