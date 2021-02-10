@@ -33,10 +33,7 @@ $num-radius: 100%;
 
 /* */
 
-@media screen and (min-width:320px) and (max-width: 767px) {
-  main section#search--desktop {
-    display: none;
-  }
+
 
   * {
     padding: 0;
@@ -223,6 +220,7 @@ $num-radius: 100%;
       align-items: center;
       justify-content: center;
       box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
+      width: 90%;
     }
     li.active i {
       color: $primary-color;
@@ -231,15 +229,13 @@ $num-radius: 100%;
       font-size: 1.3rem;
       padding-bottom: 2px;
       color: gray;
-      margin-right: 25px;
+      margin: auto;
     }
     span.step {
-      margin-left: 30px;
+      padding-right: 50px;
     }
     span.num {
       display: flex;
-      position: absolute;
-      left: 30px;
       font-size: 0.8rem;
       background-color: $primary-color;
       color: white;
@@ -248,6 +244,8 @@ $num-radius: 100%;
       height: 25px;
       align-items: center;
       justify-content: center;
+      position: absolute;
+      left: 30px;
     }
   }
   main section#restaurants {
@@ -560,21 +558,16 @@ $num-radius: 100%;
       width: 20px;
     }
   }
+
+@media screen and (max-width: 767px) {
+  main section#search--desktop {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
   main section#search--responsive {
     display: none;
-  }
-
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  html {
-    font-family: 'Roboto', sans-serif;
   }
 
   .loader {
@@ -777,14 +770,11 @@ $num-radius: 100%;
       font-size: 1.3rem;
       padding-bottom: 2px;
       color: gray;
-      margin-left: 25px;
     }
     span.step {
-      margin-left: 30px;
     }
     span.num {
       display: flex;
-      left: 30px;
       font-size: 0.8rem;
       background-color: $primary-color;
       color: white;
@@ -793,6 +783,8 @@ $num-radius: 100%;
       height: 25px;
       align-items: center;
       justify-content: center;
+      position: relative;
+      left: -10px;
     }
   }
   main section#restaurants {
