@@ -6515,7 +6515,6 @@ main div.restaurant--courses {
   overflow: hidden;
   transition: all 0.25s linear;
   outline: none;
-  min-width: 300px;
 }
 main div.restaurant--courses.course--1 {
   animation: opacity 1000ms 1200ms both;
@@ -6672,83 +6671,6 @@ footer i {
     display: none;
   }
 
-  .loader {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 10%;
-    border: 16px solid #99E2D0;
-    border-top: 16px solid #9356DC;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 0.75s linear infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  #page {
-    width: 100%;
-    height: 100%;
-    max-width: 1400px;
-    margin: auto;
-    overflow-x: hidden;
-    animation: opacity 1000ms 1000ms both;
-  }
-
-  @keyframes opacity {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  /* Header */
-  header {
-    display: flex;
-    flex-direction: row;
-    padding: 15px 0px 10px;
-  }
-  header button {
-    position: absolute;
-    top: 20px;
-    border: none;
-    background: none;
-    font-size: 1.3rem;
-    padding-left: 20px;
-    color: black;
-  }
-  header a {
-    color: black;
-  }
-  header #logo {
-    display: flex;
-    width: auto;
-    justify-content: center;
-    padding-right: 40px;
-    margin: auto;
-  }
-  header #logo img {
-    height: 30px;
-  }
-
-  /* Main */
-  main {
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    justify-content: center;
-  }
-
   /* Main Index */
   main section#search--desktop {
     background-color: #F2F2F2;
@@ -6844,213 +6766,48 @@ footer i {
   main section#execution h2 {
     padding: 0px 0px 20px 15px;
   }
-  main section#execution div#execution--steps nav {
-    padding-left: 40px;
-  }
   main section#execution ul {
     display: flex;
     flex-direction: row;
     margin: 20px 0px 0px 50px;
   }
   main section#execution li {
-    display: flex;
-    list-style: none;
-    border-radius: 20px;
-    font-size: 1rem;
-    width: 300px;
-    height: 70px;
-    color: black;
-    background: #F2F2F2;
-    border: 0px solid #F2F2F2;
     margin: 10px 50px 15px 50px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   }
   main section#execution li.active {
     background-color: rgba(147, 86, 220, 0.1);
   }
-  main section#execution li.active i {
-    color: #9356DC;
-  }
-  main section#execution i {
-    font-size: 1.3rem;
-    padding-bottom: 2px;
-    color: gray;
-  }
   main section#execution span.num {
-    display: flex;
-    font-size: 0.8rem;
-    background-color: #9356DC;
-    color: white;
-    border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    align-items: center;
-    justify-content: center;
     position: relative;
     left: -10px;
   }
 
-  main section#restaurants {
-    margin-top: 60px;
-    background-color: #F2F2F2;
-  }
-  main section#restaurants h2 {
-    padding: 50px 15px 20px;
-  }
   main section#restaurants #restaurants--list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: auto;
-    padding-bottom: 55px;
-  }
-  main section#restaurants #restaurant {
-    position: relative;
-    text-decoration: none;
-    color: black;
-  }
-  main section#restaurants #restaurant:hover {
-    color: #9356DC;
-  }
-  main section#restaurants #restaurant a {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
   }
   main section#restaurants div.restaurant--thumbnails {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: white;
     width: 75%;
-    height: 100%;
     margin: auto;
     margin-bottom: 55px;
     border-radius: 25px;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   }
   main section#restaurants .restaurant--new {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    left: 700px;
-    width: 90px;
-    height: 30px;
-    background-color: #99E2D0;
-    border-radius: 5px;
-    color: #1b6150;
-    font-weight: 600;
-  }
-  main section#restaurants img {
-    max-height: 175px;
-    width: 100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    object-position: 50% 60%;
-    object-fit: cover;
-  }
-  main section#restaurants div.restaurant--description {
-    display: flex;
-    flex-direction: column;
-    height: 75px;
-    justify-content: space-between;
-    padding: 0px 0px 0px 15px;
-  }
-  main section#restaurants h3 {
-    font-size: 1.1rem;
-    margin: 15px 0px 5px;
-    width: 200px;
-  }
-  main section#restaurants p {
-    margin: 0px 0px 10px;
-    width: 200px;
-  }
-  main section#restaurants .restaurant--likebtn {
-    padding: 6px 15px 0px;
-    position: absolute;
-    bottom: 25px;
-    right: 10px;
-  }
-  main section#restaurants .like::after {
-    font-family: "Font Awesome 5 Free";
-    content: "";
-    font-size: 1.5em;
-  }
-  main section#restaurants .favorite:checked ~ .like::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "";
-    color: #9356DC;
+    left: 415px;
   }
   main section#restaurants .visually-hidden {
-    position: absolute;
-    opacity: 0;
     width: 20px;
     height: 20px;
-  }
-  main section#restaurants div.pointed i {
-    color: #9356DC;
-  }
-  main section#restaurants .pointer i {
-    font-size: 2rem;
-    position: relative;
-    left: 310px;
-    bottom: 50px;
   }
 
   /* Main Restaurants pages  */
   main div#backgroundimg img {
-    bottom: 200px;
-    width: 100%;
     max-height: 650px;
     object-fit: cover;
     object-position: 100% 65%;
   }
-  main div#menuandfooter {
-    background-color: #F2F2F2;
-  }
-  main section#menu {
-    position: relative;
-    bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  main section#menu #menu--restauranttitle {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-  }
-  main section#menu #menu--restauranttitle h1 {
-    font-family: "Shrikhand", sans-serif;
-  }
-  main section#menu #menu--restauranttitle .restaurant--likebtn {
-    padding: 6px 15px 0px;
-  }
-  main section#menu #menu--restauranttitle .like::after {
-    font-family: "Font Awesome 5 Free";
-    content: "";
-    font-size: 1.5em;
-  }
-  main section#menu #menu--restauranttitle .favorite:checked ~ .like::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "";
-    color: #9356DC;
-  }
   main section#menu #menu--restauranttitle .visually-hidden {
-    position: absolute;
-    opacity: 0;
     width: 20px;
     height: 20px;
   }
@@ -7060,167 +6817,12 @@ footer i {
     padding: 0px 30px;
     column-gap: 2rem;
   }
-  main section#menu #menu--grid article h2 {
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: lighter;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    position: relative;
-    animation: opacity 2s;
-  }
-  @keyframes opacity {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  main section#menu #menu--grid h2:before {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 1px;
-    bottom: 0;
-    left: 0%;
-    border-bottom: 3px solid #99E2D0;
-  }
   main section#menu div.restaurant--courses {
-    height: 62px;
     position: relative;
-    display: flex;
-    text-decoration: none;
-    justify-content: space-between;
-    align-items: stretch;
-    margin: 10px 0px 10px;
-    color: black;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    overflow: hidden;
-    transition: all 0.25s linear;
-    outline: none;
-    min-width: 300px;
-  }
-  main section#menu div.restaurant--courses.course--1 {
-    animation: opacity 1000ms 1200ms both;
-  }
-  main section#menu div.restaurant--courses.course--2 {
-    animation: opacity 1000ms 1400ms both;
-  }
-  main section#menu div.restaurant--courses.course--3 {
-    animation: opacity 1000ms 1600ms both;
-  }
-  main section#menu div.restaurant--courses.course--4 {
-    animation: opacity 1000ms 1800ms both;
-  }
-  main section#menu div.restaurant--courses.course--5 {
-    animation: opacity 1000ms 2000ms both;
-  }
-  main section#menu div.restaurant--courses.course--6 {
-    animation: opacity 1000ms 2200ms both;
-  }
-  main section#menu div.restaurant--courses.course--7 {
-    animation: opacity 1000ms 2400ms both;
-  }
-  main section#menu div.restaurant--courses.course--8 {
-    animation: opacity 1000ms 2600ms both;
-  }
-  main section#menu div.restaurant--courses.course--9 {
-    animation: opacity 1000ms 2800ms both;
-  }
-  main section#menu div.restaurant--courses.course--10 {
-    animation: opacity 1000ms 3000ms both;
-  }
-  @keyframes opacity {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  main section#menu div.restaurant--courses:focus {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-  }
-  main section#menu div.restaurant--courses:focus .price {
-    transform: translateX(-5px);
-    transition: all 0.25s linear;
-  }
-  main section#menu div.restaurant--courses:focus .validate {
-    width: 75px;
-    height: 62px;
-  }
-  main section#menu div.restaurant--courses:focus .validate span {
-    opacity: 1;
-    transform: rotate(0) scale(1.4);
-  }
-  main section#menu div.restaurant--courses .content {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    overflow: hidden;
-    width: 100%;
-  }
-  main section#menu div.restaurant--courses .content h3 {
-    font-size: 1em;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  main section#menu div.restaurant--courses .content p {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 0.8em;
-    padding-top: 5px;
-  }
-  main section#menu div.restaurant--courses .price {
-    display: flex;
-    font-weight: bold;
-    padding: 10px 10px 0px 0px;
-    transition: all 0.25s;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    align-items: center;
-  }
-  main section#menu div.restaurant--courses .validate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #99E2D0;
-    width: 0;
-    transition: all 0.25s linear;
-  }
-  main section#menu div.restaurant--courses .validate span {
-    opacity: 0;
-    transform: rotate(180deg) scale(0.8);
-    transition: all 0.25s linear;
-  }
-  main section#menu div.restaurant--courses .validate span i {
-    color: white;
-  }
-  main div#btn--order {
-    display: flex;
-    justify-content: center;
-    background-color: #F2F2F2;
-    padding-bottom: 80px;
-  }
-  main div#btn--order button.commander {
-    border-radius: 30px;
-    font-size: 1rem;
-    width: 220px;
-    height: 45px;
-    color: white;
-    background: linear-gradient(#FF79DA, 55%, #9356DC);
-    border: 0px solid #FF79DA;
-    text-align: center;
   }
 
   /* Footer */
   footer {
-    background-color: #383838;
     padding: 20px 0px 50px 70px;
     display: inline-block;
     text-align: center;
@@ -7228,22 +6830,11 @@ footer i {
   }
   footer h4 {
     font-size: 1.8rem;
-    margin: 0px;
     padding-bottom: 30px;
-    font-family: "Shrikhand", sans-serif;
-    color: white;
   }
   footer nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  }
-  footer a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 0px 5px;
-  }
-  footer a:hover {
-    color: #9356DC;
   }
   footer i {
     padding-right: 25px;
