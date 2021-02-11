@@ -747,7 +747,9 @@ $num-radius: 100%;
     }
     nav {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr);      
+      max-width: 1400px;
+      margin: 0 auto;
     }
     i {
       padding-right: 25px;
