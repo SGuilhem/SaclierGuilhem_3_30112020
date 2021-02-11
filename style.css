@@ -6515,6 +6515,7 @@ main div.restaurant--courses {
   overflow: hidden;
   transition: all 0.25s linear;
   outline: none;
+  max-width: 300px;
 }
 main div.restaurant--courses.course--1 {
   animation: opacity 1000ms 1200ms both;
