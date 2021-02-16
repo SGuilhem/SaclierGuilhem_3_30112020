@@ -6189,6 +6189,11 @@ main {
   justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  main section#search--desktop {
+    display: none;
+  }
+}
 /* Main Index */
 main section#search--responsive {
   background-color: #F2F2F2;
@@ -6367,7 +6372,7 @@ main section#restaurants .restaurant--new {
   align-items: center;
   position: absolute;
   top: 20px;
-  left: 260px;
+  left: 280px;
   width: 90px;
   height: 30px;
   background-color: #99E2D0;
@@ -6659,11 +6664,6 @@ footer i {
   width: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  main section#search--desktop {
-    display: none;
-  }
-}
 @media screen and (min-width: 768px) {
   main section#search--responsive {
     display: none;
@@ -6835,6 +6835,25 @@ footer i {
   footer i {
     padding-right: 25px;
     width: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  main section#execution span.num {
+    width: 35px;
+  }
+
+  main section#restaurants .restaurant--new {
+    left: 265px;
+  }
+
+  main section#menu #menu--grid {
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 1rem;
+  }
+
+  main section#menu #menu--grid .desserts {
+    display: grid;
+    grid-template-columns: repeat(1, 203%);
   }
 }
 
