@@ -29,7 +29,6 @@ $num-radius: 100%;
   overflow: hidden;
   transition: all .25s linear;
   outline: none;
-  max-width: 300px;
 }
 
 /* */
@@ -261,7 +260,7 @@ $num-radius: 100%;
       justify-content: space-around;
       align-content: space-between;
       height: auto;
-      padding-bottom: 55px;
+      padding: 0px 10px 55px 10px;
     }
     #restaurant {
       position: relative;
@@ -434,6 +433,7 @@ $num-radius: 100%;
     }
     div.restaurant--courses {
       height: 62px;
+      max-width: 100%;
       @include course;
 
       @for $i from 1 through 10 {
@@ -451,12 +451,10 @@ $num-radius: 100%;
         box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
       }
       &:focus .price {
-        transform: translateX(-5px);
         transition: all 0.25s linear;
       }
       &:focus .validate {
         width: 75px;
-        height: 62px;
       }
       &:focus .validate span {
         opacity: 1;
@@ -487,7 +485,6 @@ $num-radius: 100%;
         font-weight: bold;
         padding: 10px 10px 0px 0px;
         transition: all 0.25s;
-        text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
         align-items: center;
@@ -723,12 +720,8 @@ $num-radius: 100%;
       }
       #menu--grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 0px 30px;
+        grid-template-columns: repeat(3, 31%);
         column-gap: 2rem;
-      }
-      div.restaurant--courses {
-        position: relative;
       }
     }
   }
@@ -747,7 +740,7 @@ $num-radius: 100%;
     }
     nav {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);      
+      grid-template-columns: repeat(4, 1fr);
       max-width: 1400px;
       margin: 0 auto;
     }

@@ -6334,7 +6334,7 @@ main section#restaurants #restaurants--list {
   justify-content: space-around;
   align-content: space-between;
   height: auto;
-  padding-bottom: 55px;
+  padding: 0px 10px 55px 10px;
 }
 main section#restaurants #restaurant {
   position: relative;
@@ -6504,6 +6504,7 @@ main section#menu h2:before {
 }
 main div.restaurant--courses {
   height: 62px;
+  max-width: 100%;
   display: flex;
   text-decoration: none;
   justify-content: space-between;
@@ -6515,7 +6516,6 @@ main div.restaurant--courses {
   overflow: hidden;
   transition: all 0.25s linear;
   outline: none;
-  max-width: 300px;
 }
 main div.restaurant--courses.course--1 {
   animation: opacity 1000ms 1200ms both;
@@ -6559,12 +6559,10 @@ main div.restaurant--courses:focus {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 main div.restaurant--courses:focus .price {
-  transform: translateX(-5px);
   transition: all 0.25s linear;
 }
 main div.restaurant--courses:focus .validate {
   width: 75px;
-  height: 62px;
 }
 main div.restaurant--courses:focus .validate span {
   opacity: 1;
@@ -6595,7 +6593,6 @@ main div.restaurant--courses .price {
   font-weight: bold;
   padding: 10px 10px 0px 0px;
   transition: all 0.25s;
-  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   align-items: center;
@@ -6814,12 +6811,8 @@ footer i {
   }
   main section#menu #menu--grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0px 30px;
+    grid-template-columns: repeat(3, 31%);
     column-gap: 2rem;
-  }
-  main section#menu div.restaurant--courses {
-    position: relative;
   }
 
   /* Footer */
