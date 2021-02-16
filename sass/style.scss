@@ -557,8 +557,7 @@ footer {
     }
   }
   i {
-    padding-right: 5px;
-    width: 20px;
+    margin-right: 5px;
   }
 }
 
@@ -741,10 +740,6 @@ footer {
       grid-template-columns: repeat(4, 1fr);
       max-width: 1400px;
       margin: 0 auto;
-    }
-    i {
-      padding-right: 25px;
-      width: 20px;
     }
   }
 
