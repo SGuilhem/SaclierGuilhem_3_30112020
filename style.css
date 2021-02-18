@@ -6702,7 +6702,7 @@ footer i {
     flex-direction: row;
     justify-content: center;
   }
-  main section#search--desktop #explorer--desktop div#search--desktop--block form#search--desktop {
+  main section#search--desktop #explorer--desktop div#search--desktop--block form#form--desktop {
     display: flex;
     flex-direction: row;
     justify-content: center;
