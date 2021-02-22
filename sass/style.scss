@@ -46,24 +46,40 @@ html {
 }
 
 .loader {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  top: 10%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: loaderOpacity;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  z-index: 1000;
+}
+
+@keyframes loaderOpacity {
+  0% { opacity: 1}
+  65% { opacity: 1}
+  100% { opacity: 0}
+}
+
+.spinner {
   border: 16px solid $tertiary-color;
   border-top: 16px solid $primary-color;
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 0.75s linear infinite;
+  animation: 1s linear 0s infinite normal forwards running spin;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
 }
+
 
 #page {
   width: 100%;
@@ -71,11 +87,6 @@ html {
   max-width: 1400px;
   margin: auto;
   overflow-x: hidden;
-  animation: opacity 1000ms 1000ms both;
-}
-@keyframes opacity {
-  from { opacity: 0; }
-  to   { opacity: 1; }
 }
 
 /* Header */
@@ -212,6 +223,7 @@ main section#execution {
     padding-left: 40px;
   }
   li {
+    position: relative;
     display: flex;
     list-style: none;
     border-radius: $function-radius;
@@ -235,10 +247,7 @@ main section#execution {
     font-size: 1.3rem;
     padding-bottom: 2px;
     color: gray;
-    margin: auto;
-  }
-  span.step {
-    padding-right: 50px;
+    padding: 0px 10px;
   }
   span.num {
     display: flex;
@@ -251,7 +260,7 @@ main section#execution {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 30px;
+    left: -15px;
   }
 }
 main section#restaurants {
@@ -300,7 +309,7 @@ main section#restaurants {
     align-items: center;
     position: absolute;
     top: 20px;
-    left: 280px;
+    right: 20px;
     width: 90px;
     height: 30px;
     background-color: $tertiary-color;
