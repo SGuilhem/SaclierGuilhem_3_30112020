@@ -6797,7 +6797,7 @@ footer i {
   }
   main section#execution span.num {
     position: relative;
-    left: -10px;
+    left: -65px;
   }
 
   main section#restaurants #restaurants--list {
@@ -6854,8 +6854,20 @@ footer i {
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
+  main section#execution div#execution--steps nav {
+    padding-left: 0px;
+  }
+  main section#execution ul {
+    margin: 20px 0px 0px 20px;
+  }
+  main section#execution li {
+    margin: 10px 20px 15px 20px;
+  }
+
   main section#execution span.num {
     width: 35px;
+    height: 35px;
+    left: -45px;
   }
 
   main section#restaurants .restaurant--new {
