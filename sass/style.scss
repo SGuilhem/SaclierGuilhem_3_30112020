@@ -57,13 +57,12 @@ html {
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  z-index: -5;
 }
 
 @keyframes loaderOpacity {
   0% { opacity: 1}
   65% { opacity: 1}
-  100% { opacity: 0}
+  100% {visibility: hidden;}
 }
 
 .spinner {
@@ -148,7 +147,6 @@ main section#search--responsive {
     height: 50px;
     border: 0px solid #F0F0F0;
     box-shadow: inset 0px 4px 6px #888;
-    z-index: 5;
   }
   .geolocate{
     display: flex;
@@ -623,7 +621,6 @@ footer {
           height: 45px;
           border: 0px solid #F0F0F0;
           box-shadow: inset 0px 4px 6px #888;
-          z-index: 5;
         }
         .geolocate{
           display: flex;
