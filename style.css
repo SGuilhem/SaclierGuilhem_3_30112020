@@ -6127,7 +6127,7 @@ html {
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  z-index: 1000;
+  z-index: -5;
 }
 
 @keyframes loaderOpacity {
@@ -6164,8 +6164,17 @@ html {
   max-width: 1400px;
   margin: auto;
   overflow-x: hidden;
+  animation: opacity 1s 3s both;
 }
 
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* Header */
 header {
   display: flex;
@@ -6217,6 +6226,7 @@ main section#search--responsive #form--responsive {
   height: 50px;
   border: 0px solid #F0F0F0;
   box-shadow: inset 0px 4px 6px #888;
+  z-index: 5;
 }
 main section#search--responsive .geolocate {
   display: flex;
@@ -6648,6 +6658,7 @@ main div#btn--order button.commander {
 footer {
   background-color: #383838;
   padding: 20px 0px 35px 20px;
+  animation: opacity 1s 3s both;
 }
 footer h4 {
   font-size: 1rem;
@@ -6720,6 +6731,7 @@ footer i {
     height: 45px;
     border: 0px solid #F0F0F0;
     box-shadow: inset 0px 4px 6px #888;
+    z-index: 5;
   }
   main section#search--desktop #explorer--desktop div#search--desktop--block .geolocate {
     display: flex;
