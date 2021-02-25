@@ -24,6 +24,7 @@ $num-radius: 100%;
   align-items: stretch;
   margin: 10px 0px 10px;
   color: black;
+  background-color: white;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
   border-radius: 20px;
   overflow: hidden;
@@ -193,6 +194,11 @@ main section#search--responsive {
     color: white;
     background: linear-gradient(160deg, $secondary-color 10%, $primary-color);
     border: 0px solid $secondary-color;
+    &:hover {
+    background: lighten($secondary-color, 2%);
+    outline: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
+  }
   }
   #explorer--responsive{
     width: auto;
@@ -248,14 +254,17 @@ main section#execution {
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
     width: 90%;
   }
-  li.active i {
-    color: $primary-color;
+  li.active {
+    background-color: rgba($primary-color, 0.1);
   }
   i{
     font-size: 1.3rem;
     padding-bottom: 2px;
     color: gray;
     padding: 0px 10px;
+  }
+  li.active i {
+    color: $primary-color;
   }
   span.num {
     display: flex;
@@ -544,7 +553,13 @@ main {
       background: linear-gradient($secondary-color, 55%, $primary-color);
       border: 0px solid $secondary-color;
       text-align: center;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+      &:hover {
+      background: lighten($secondary-color, 2%);
+      outline: none;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
     }
+  }
   }
 }
 
@@ -669,6 +684,11 @@ footer {
           color: white;
           background: linear-gradient(160deg, $secondary-color 10%, $primary-color);
           border: 0px solid $secondary-color;
+          &:hover {
+          background: lighten($secondary-color, 2%);
+          outline: none;
+          box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
+        }
         }
       }
     }

@@ -6280,6 +6280,11 @@ main section#search--responsive button.explorer--responsive {
   background: linear-gradient(160deg, #FF79DA 10%, #9356DC);
   border: 0px solid #FF79DA;
 }
+main section#search--responsive button.explorer--responsive:hover {
+  background: #ff83dd;
+  outline: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
 main section#search--responsive #explorer--responsive {
   width: auto;
   text-align: center;
@@ -6332,14 +6337,17 @@ main section#execution li {
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   width: 90%;
 }
-main section#execution li.active i {
-  color: #9356DC;
+main section#execution li.active {
+  background-color: rgba(147, 86, 220, 0.1);
 }
 main section#execution i {
   font-size: 1.3rem;
   padding-bottom: 2px;
   color: gray;
   padding: 0px 10px;
+}
+main section#execution li.active i {
+  color: #9356DC;
 }
 main section#execution span.num {
   display: flex;
@@ -6545,6 +6553,7 @@ main div.restaurant--courses {
   align-items: stretch;
   margin: 10px 0px 10px;
   color: black;
+  background-color: white;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   overflow: hidden;
@@ -6662,6 +6671,12 @@ main div#btn--order button.commander {
   background: linear-gradient(#FF79DA, 55%, #9356DC);
   border: 0px solid #FF79DA;
   text-align: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+main div#btn--order button.commander:hover {
+  background: #ff83dd;
+  outline: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Footer */
@@ -6785,6 +6800,11 @@ footer i {
     color: white;
     background: linear-gradient(160deg, #FF79DA 10%, #9356DC);
     border: 0px solid #FF79DA;
+  }
+  main section#search--desktop #explorer--desktop div#search--desktop--block button.explorer--desktop:hover {
+    background: #ff83dd;
+    outline: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   }
 
   main section#execution {
