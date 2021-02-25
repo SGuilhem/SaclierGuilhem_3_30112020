@@ -6136,6 +6136,18 @@ html {
   65% {
     opacity: 1;
   }
+  70% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
   100% {
     visibility: hidden;
   }
@@ -6458,7 +6470,7 @@ main div#backgroundimg img {
   bottom: 200px;
   width: 100%;
 }
-main div#menuandfooter {
+main div#menurestaurant {
   background-color: #F2F2F2;
 }
 main section#menu {

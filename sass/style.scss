@@ -62,6 +62,10 @@ html {
 @keyframes loaderOpacity {
   0% { opacity: 1}
   65% { opacity: 1}
+  70% { opacity: 0.8}
+  75% {opacity: 0.6}
+  80% {opacity: 0.4}
+  100% {opacity: 0}
   100% {visibility: hidden;}
 }
 
@@ -387,7 +391,7 @@ main {
       width: 100%;
     }
   }
-  div#menuandfooter {
+  div#menurestaurant {
     background-color: $gray;
   }
   section#menu {
